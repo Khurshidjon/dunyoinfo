@@ -20,7 +20,7 @@ class BackendController extends Controller
     public function loginPage()
     {
         if(!Auth::check()){
-            return view('backend.adminAuth.login');
+            return view('backend.AdminAuth.login');
         }else{
             return redirect('/');
         }
