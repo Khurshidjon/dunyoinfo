@@ -80,7 +80,7 @@ return [
     |
     */
 
-    'locale' => 'en',
+    'locale' => 'cyrl',
 
     /*
     |--------------------------------------------------------------------------
@@ -92,6 +92,8 @@ return [
     | the language folders that are provided through your application.
     |
     */
+
+    'locales' => ['uz', 'cyrl', 'ru', 'en'],
 
     'fallback_locale' => 'en',
 
@@ -169,6 +171,8 @@ return [
         UniSharp\LaravelFilemanager\LaravelFilemanagerServiceProvider::class,
         Intervention\Image\ImageServiceProvider::class,
         Spatie\Permission\PermissionServiceProvider::class,
+        Mcamara\LaravelLocalization\LaravelLocalizationServiceProvider::class,
+
         /*
          * Application Service Providers...
          */
@@ -229,6 +233,7 @@ return [
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
         'Image' => Intervention\Image\Facades\Image::class,
+        'LaravelLocalization' => Mcamara\LaravelLocalization\Facades\LaravelLocalization::class,
     ],
 
 ];

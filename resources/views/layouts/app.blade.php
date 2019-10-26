@@ -24,7 +24,7 @@
     <!--[if lt IE 9]>
 	    <script src="js/html5shiv.js"></script>
 	    <script src="js/respond.min.js"></script>
-    <![endif]-->
+	<![endif]-->
     <link rel="shortcut icon" href="{{ asset('frontend/images/ico/favicon.ico') }}">
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{ asset('frontend/images/ico/apple-touch-icon-144-precomposed.png') }}">
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="{{ asset('frontend/images/ico/apple-touch-icon-114-precomposed.png') }}">
@@ -38,12 +38,15 @@
 				<div id="date-time"></div>
 				<div id="topbar-right">
 					<div class="dropdown language-dropdown">
-						<a data-toggle="dropdown" href="#"><span class="change-text">En</span> <i class="fa fa-angle-down"></i></a>
+						<a data-toggle="dropdown" href="#"><span class="change-text">{{ LaravelLocalization::getCurrentLocaleName() }}</span> <i class="fa fa-angle-down"></i></a>
 						<ul class="dropdown-menu language-change">
-							<li><a href="#">EN</a></li>
-							<li><a href="#">FR</a></li>
-							<li><a href="#">GR</a></li>
-							<li><a href="#">ES</a></li>
+							@foreach(LaravelLocalization::getSupportedLocales() as $localeCode => $properties)
+								<li>
+									<a rel="alternate" hreflang="{{ $localeCode }}" href="{{ LaravelLocalization::getLocalizedURL($localeCode, null, [], true) }}">
+										{{ $properties['native'] }}
+									</a>
+								</li>
+							@endforeach
 						</ul>
 					</div>
 					<div id="weather"></div>
@@ -108,7 +111,7 @@
 					<div class="container">
 						<nav id="mainmenu" class="navbar-left collapse navbar-collapse">
 							<ul class="nav navbar-nav">
-							<li class="home"><a href="/" class="">Home</a></li>
+							<li class="home"><a href="{{ route('frontend.index') }}" class="">Home</a></li>
 							<li class="business dropdown"><a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">Business</a>
 								<ul class="dropdown-menu">
 									<li><a href="#">Dropdown Demo</a></li>

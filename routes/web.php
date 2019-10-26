@@ -10,23 +10,51 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
+// Route::prefix('{lang?}')->middleware('locale')->group(function() {});
 
-Route::get('/', 'FrontendController@index')->name('frontend.index');
-Route::get('/single-news', 'FrontendController@singleNews')->name('frontend.single-news');
-Route::get('/listing-sports', 'FrontendController@listingSports')->name('frontend.listing-sports');
-Route::get('/entertainment', 'FrontendController@listing')->name('frontend.entertainment');
-Route::get('/health', 'FrontendController@listing')->name('frontend.health');
-Route::get('/lifestyle', 'FrontendController@listing')->name('frontend.lifestyle');
-Auth::routes();
-
-Route::get('/home', 'HomeController@index')->name('home');
+// Route::get('i/{lang}', function ($lang) {
+//     \Session::put('lang', $lang);
+//     return redirect()->back();
+// })->name('locale');
 
 
-Route::group(['prefix' => 'admin', 'middleware' => 'role:Admin'], function () {
-    Route::resource('/posts', 'PostController');
-   
-   
-    Route::get('/', 'BackendController@index')->name('admin.index');
-    Route::get('/forms', 'BackendController@form')->name('admin.forms');
-    Route::get('/tables', 'BackendController@tables')->name('admin.tables');
-});
+
+// Route::get('/', 'FrontendController@index')->name('frontend.index');
+// Route::get('/', function () {
+//     $locale = config('app.locale');
+//     return redirect($locale);
+// });
+
+
+Route::group(
+    [
+        'prefix' => LaravelLocalization::setLocale(),
+        'middleware' => [ 'localeSessionRedirect', 'localizationRedirect', 'localeViewPath' ]
+    ],
+    function()
+    {
+        Route::get('/', 'FrontendController@index')->name('frontend.index');
+        Route::get('/single-news', 'FrontendController@singleNews')->name('frontend.single-news');
+        Route::get('/listing-sports', 'FrontendController@listingSports')->name('frontend.listing-sports');
+        Route::get('/entertainment', 'FrontendController@listing')->name('frontend.entertainment');
+        Route::get('/health', 'FrontendController@listing')->name('frontend.health');
+        Route::get('/lifestyle', 'FrontendController@listing')->name('frontend.lifestyle');
+  
+
+
+
+    Auth::routes();
+
+    Route::get('/home', 'HomeController@index')->name('home');
+
+    Route::get('/admin/login/page', 'BackendController@loginPage')->name('admin.login');
+
+        Route::get('/admin', 'BackendController@index')->name('admin.index');
+
+    Route::group(['prefix' => 'admin', 'middleware' => 'role:Admin'], function () {
+        Route::resource('/posts', 'PostController');
+        Route::get('/forms', 'BackendController@form')->name('admin.forms');
+        Route::get('/tables', 'BackendController@tables')->name('admin.tables');
+    });
+}
+);

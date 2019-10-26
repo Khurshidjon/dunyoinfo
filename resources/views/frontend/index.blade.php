@@ -1,6 +1,9 @@
 @extends('layouts.app')
 @section('content')
-
+@php
+$lang = App::getLocale();
+        // dd($lang);
+@endphp
     <div class="container">
         <div id="breaking-news">
             <span>Breaking News</span>

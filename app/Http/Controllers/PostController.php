@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Post;
 use Illuminate\Http\Request;
+use \Cviebrock\EloquentSluggable\Services\SlugService;
 
 class PostController extends Controller
 {
@@ -42,6 +43,7 @@ class PostController extends Controller
     public function store(Request $request)
     {
         $post = new Post();
+        $post->slug = SlugService::createSlug(Post::class, 'slug', $request->title_uz);
         $post->title_uz = $request->title_uz;
         $post->title_cyrl = $request->title_cyrl;
         $post->title_ru = $request->title_ru;
@@ -54,13 +56,15 @@ class PostController extends Controller
         $post->body_cyrl = $request->body_cyrl;
         $post->body_ru = $request->body_ru;
         $post->body_en = $request->body_en;
+        $post->author_id = \Auth::id();
         $post->status = $request->get('status');
         $filename = $request->file('image');
+
         if($filename){
             $post->image = $filename->store('Posts'.'/'.date('fY'), 'public');
         }
         $post->save();
-        return 'ok';
+        return redirect()->route('posts.index')->with('success', 'Post has been created successfully');
     }
 
     /**

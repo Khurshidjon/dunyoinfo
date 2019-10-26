@@ -256,8 +256,8 @@
 						<div class="info">
 							<a data-toggle="collapse" href="#collapseExample" aria-expanded="true">
 								<span>
-									Hizrian
-									<span class="user-level">Administrator</span>
+									{{ Auth::user()->name }}
+									<span class="user-level">{{ Auth::user()->roles->first()->name }}</span>
 									<span class="caret"></span>
 								</span>
 							</a>
@@ -279,6 +279,16 @@
 										<a href="#settings">
 											<span class="link-collapse">Settings</span>
 										</a>
+									</li>
+									<li>
+										<a href="{{ route('logout') }}"
+											onclick="event.preventDefault();
+														document.getElementById('logout-form').submit();">
+											{{ __('Logout') }}
+										</a>
+										<form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+											@csrf
+										</form>
 									</li>
 								</ul>
 							</div>
