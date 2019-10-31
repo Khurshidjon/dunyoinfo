@@ -2,15 +2,21 @@
 <html lang="en">
 <head>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-	<title>Azzara Bootstrap 4 Admin Dashboard</title>
+	<title>DUNYO.INFO | ADMIN</title>
 	<meta content='width=device-width, initial-scale=1.0, shrink-to-fit=no' name='viewport' />
 	<link rel="icon" href="{{ asset('backend/img/icon.ico') }}" type="image/x-icon"/>
+
+	<style>
+		.main-header[data-background-color=purple]{
+			background: #35cd3a !important;
+		}
+	</style>
 
 	<!--   Core JS Files   -->
 	<script src="{{ asset('backend/js/core/jquery.3.2.1.min.js') }}"></script>
 	<script src="{{ asset('backend/js/core/popper.min.js') }}"></script>
 	<script src="{{ asset('backend/js/core/bootstrap.min.js') }}"></script>
-	
+
 	<script src="{{ asset('backend/ckeditor4/ckeditor.js') }}"></script>
 	<!-- Fonts and icons -->
 	<script src="{{ asset('backend/js/plugin/webfont/webfont.min.js') }}"></script>
@@ -39,7 +45,7 @@
 		<div class="main-header" data-background-color="purple">
 			<!-- Logo Header -->
 			<div class="logo-header">
-				
+
 				<a href="{{ route('admin.index') }}" class="logo text-white">
           DUNYO.INFO
 					{{-- <img src="{{ asset('frontend/images/presets/preset1/logo_en.png') }}" style="width: 5em" alt="navbar brand" class="navbar-brand"> --}}
@@ -60,7 +66,7 @@
 
 			<!-- Navbar Header -->
 			<nav class="navbar navbar-header navbar-expand-lg">
-				
+
 				<div class="container-fluid">
 					<div class="collapse" id="search-nav">
 						<form class="navbar-left navbar-form nav-search mr-md-3">
@@ -87,7 +93,7 @@
 							<ul class="dropdown-menu messages-notif-box animated fadeIn" aria-labelledby="messageDropdown">
 								<li>
 									<div class="dropdown-title d-flex justify-content-between align-items-center">
-										Messages 									
+										Messages
 										<a href="#" class="small">Mark all as read</a>
 									</div>
 								</li>
@@ -95,7 +101,7 @@
 									<div class="message-notif-scroll scrollbar-outer">
 										<div class="notif-center">
 											<a href="#">
-												<div class="notif-img"> 
+												<div class="notif-img">
 													<img src="{{ asset('backend/img/jm_denis.jpg') }}" alt="Img Profile">
 												</div>
 												<div class="notif-content">
@@ -103,11 +109,11 @@
 													<span class="block">
 														How are you ?
 													</span>
-													<span class="time">5 minutes ago</span> 
+													<span class="time">5 minutes ago</span>
 												</div>
 											</a>
 											<a href="#">
-												<div class="notif-img"> 
+												<div class="notif-img">
 													<img src="{{ asset('backend/img/chadengle.jpg') }}" alt="Img Profile">
 												</div>
 												<div class="notif-content">
@@ -115,11 +121,11 @@
 													<span class="block">
 														Ok, Thanks !
 													</span>
-													<span class="time">12 minutes ago</span> 
+													<span class="time">12 minutes ago</span>
 												</div>
 											</a>
 											<a href="#">
-												<div class="notif-img"> 
+												<div class="notif-img">
 													<img src="{{ asset('backend/img/mlane.jpg') }}" alt="Img Profile">
 												</div>
 												<div class="notif-content">
@@ -127,11 +133,11 @@
 													<span class="block">
 														Ready for the meeting today...
 													</span>
-													<span class="time">12 minutes ago</span> 
+													<span class="time">12 minutes ago</span>
 												</div>
 											</a>
 											<a href="#">
-												<div class="notif-img"> 
+												<div class="notif-img">
 													<img src="{{ asset('backend/img/talha.jpg') }}" alt="Img Profile">
 												</div>
 												<div class="notif-content">
@@ -139,7 +145,7 @@
 													<span class="block">
 														Hi, Apa Kabar ?
 													</span>
-													<span class="time">17 minutes ago</span> 
+													<span class="time">17 minutes ago</span>
 												</div>
 											</a>
 										</div>
@@ -168,7 +174,7 @@
 													<span class="block">
 														New user registered
 													</span>
-													<span class="time">5 minutes ago</span> 
+													<span class="time">5 minutes ago</span>
 												</div>
 											</a>
 											<a href="#">
@@ -177,18 +183,18 @@
 													<span class="block">
 														Rahmad commented on Admin
 													</span>
-													<span class="time">12 minutes ago</span> 
+													<span class="time">12 minutes ago</span>
 												</div>
 											</a>
 											<a href="#">
-												<div class="notif-img"> 
+												<div class="notif-img">
 													<img src="{{ asset('backend/img/profile2.jpg') }}" alt="Img Profile">
 												</div>
 												<div class="notif-content">
 													<span class="block">
 														Reza send messages to you
 													</span>
-													<span class="time">12 minutes ago</span> 
+													<span class="time">12 minutes ago</span>
 												</div>
 											</a>
 											<a href="#">
@@ -197,7 +203,7 @@
 													<span class="block">
 														Farrah liked Admin
 													</span>
-													<span class="time">17 minutes ago</span> 
+													<span class="time">17 minutes ago</span>
 												</div>
 											</a>
 										</div>
@@ -219,8 +225,8 @@
 									<div class="user-box">
 										<div class="avatar-lg"><img src="{{ asset('backend/img/profile.jpg') }}" alt="image profile" class="avatar-img rounded"></div>
 										<div class="u-text">
-											<h4>Hizrian</h4>
-											<p class="text-muted">hello@example.com</p><a href="profile.html" class="btn btn-rounded btn-danger btn-sm">View Profile</a>
+											<h4>{{ auth()->user()->name }}</h4>
+											<p class="text-muted">{{ auth()->user()->email }}</p><a href="profile.html" class="btn btn-rounded btn-danger btn-sm">View Profile</a>
 										</div>
 									</div>
 								</li>
@@ -232,11 +238,18 @@
 									<div class="dropdown-divider"></div>
 									<a class="dropdown-item" href="#">Account Setting</a>
 									<div class="dropdown-divider"></div>
-									<a class="dropdown-item" href="#">Logout</a>
+									<a class="dropdown-item" href="{{ route('logout') }}"
+											onclick="event.preventDefault();
+														document.getElementById('logout-form').submit();">
+											{{ __('Logout') }}
+										</a>
+									<form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+										@csrf
+									</form>
 								</li>
 							</ul>
 						</li>
-						
+
 					</ul>
 				</div>
 			</nav>
@@ -245,7 +258,7 @@
 
 		<!-- Sidebar -->
 		<div class="sidebar">
-			
+
 			<div class="sidebar-background"></div>
 			<div class="sidebar-wrapper scrollbar-inner">
 				<div class="sidebar-content">
@@ -322,20 +335,20 @@
 										</a>
 									</li>
 									<li>
-										<a href="components/buttons.html">
+										<a href="{{ route('categories.index') }}">
 											<span class="sub-item">Categories</span>
 										</a>
 									</li>
 								</ul>
 							</div>
-            </li>
-            <li class="nav-item">
-                <a href="widgets.html">
-								  <i class="fas fa-bars"></i>
-                  <p>MENUS</p>
-                </a>
-              </li>
-						{{-- <li class="nav-item">
+                        </li>
+                        <li class="nav-item">
+                            <a href="{{ route('menus.index') }}">
+                                <i class="fas fa-bars"></i>
+                                <p>MENUS</p>
+                            </a>
+                        </li>
+                    {{-- <li class="nav-item">
 							<a data-toggle="collapse" href="#forms">
 								<i class="fas fa-pen-square"></i>
 								<p>Forms</p>
@@ -348,7 +361,7 @@
 											<span class="sub-item">Basic Form</span>
 										</a>
 									</li>
-									
+
 								</ul>
 							</div>
 						</li>
@@ -420,7 +433,7 @@
 								</ul>
 							</div>
 						</li>
-						
+
 						<li class="nav-item">
 							<a href="widgets.html">
 								<i class="fas fa-desktop"></i>
@@ -519,7 +532,7 @@
 		<div class="main-panel">
       @yield('content')
 		</div>
-		
+
 		<!-- Custom template | don't include it in your project! -->
 		<div class="custom-template">
 			<div class="title">Settings</div>
@@ -529,9 +542,9 @@
 						<h4>Topbar</h4>
 						<div class="btnSwitch">
 							<button type="button" class="changeMainHeaderColor" data-color="blue"></button>
-							<button type="button" class="selected changeMainHeaderColor" data-color="purple"></button>
+							<button type="button" class="changeMainHeaderColor" data-color="purple"></button>
 							<button type="button" class="changeMainHeaderColor" data-color="light-blue"></button>
-							<button type="button" class="changeMainHeaderColor" data-color="green"></button>
+							<button type="button" class="selected changeMainHeaderColor" data-color="green"></button>
 							<button type="button" class="changeMainHeaderColor" data-color="orange"></button>
 							<button type="button" class="changeMainHeaderColor" data-color="red"></button>
 						</div>

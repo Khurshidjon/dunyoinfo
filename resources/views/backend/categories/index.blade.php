@@ -33,9 +33,9 @@
                     <div class="card-header">
                         <div class="d-flex align-items-center">
                             <h4 class="card-title">Add Row</h4>
-                            <a href="{{ route('posts.create') }}" class="btn btn-primary btn-round ml-auto">
+                            <a href="{{ route('categories.create') }}" class="btn btn-primary btn-round ml-auto">
                                 <i class="fa fa-plus"></i>
-                                Add New Post
+                                Add New Category
                             </a>
                         </div>
                     </div>
@@ -47,7 +47,7 @@
                                     <div class="modal-header no-bd">
                                         <h5 class="modal-title">
                                             <span class="fw-mediumbold">
-                                            New</span> 
+                                            New</span>
                                             <span class="fw-light">
                                                 Row
                                             </span>
@@ -62,19 +62,19 @@
                                             <div class="row">
                                                 <div class="col-sm-12">
                                                     <div class="form-group form-group-default">
-                                                        <label>Name</label>
+                                                        <label>Name uz</label>
                                                         <input id="addName" type="text" class="form-control" placeholder="fill name">
                                                     </div>
                                                 </div>
                                                 <div class="col-md-6 pr-0">
                                                     <div class="form-group form-group-default">
-                                                        <label>Position</label>
+                                                        <label>Name cyrl</label>
                                                         <input id="addPosition" type="text" class="form-control" placeholder="fill position">
                                                     </div>
                                                 </div>
                                                 <div class="col-md-6">
                                                     <div class="form-group form-group-default">
-                                                        <label>Office</label>
+                                                        <label>Name en</label>
                                                         <input id="addOffice" type="text" class="form-control" placeholder="fill office">
                                                     </div>
                                                 </div>
@@ -93,41 +93,42 @@
                             <table id="add-row" class="display table table-striped table-hover" >
                                 <thead>
                                     <tr>
-                                        <th>Name</th>
-                                        <th>Position</th>
-                                        <th>Office</th>
+                                        <th>Name uz</th>
+                                        <th>Name cyrl</th>
+                                        <th>Name en</th>
+                                        <th>Name ru</th>
                                         <th style="width: 10%">Action</th>
                                     </tr>
                                 </thead>
                                 <tfoot>
                                     <tr>
-                                        <th>Name</th>
-                                        <th>Position</th>
-                                        <th>Office</th>
+                                        <th>Name uz</th>
+                                        <th>Name cyrl</th>
+                                        <th>Name en</th>
+                                        <th>Name ru</th>
                                         <th>Action</th>
                                     </tr>
                                 </tfoot>
                                 <tbody>
-                                    @forelse ($posts as $post)
+                                    @forelse ($categories as $category)
                                         <tr>
-                                            <td>
-                                                <a href="#">{{ $post->{'title_'.$lang} }}</a>
-                                            </td>
-                                            <td><img src="{{ asset('storage/images/thumbnailSmall') .'/'. $post->image }}" style="width:100px" alt="" srcset=""></td>
-                                            <td>Edinburgh</td>
+                                            <td>{{ $category->{'name_uz'} }}</td>
+                                            <td>{{ $category->{'name_cyrl'} }}</td>
+                                            <td>{{ $category->{'name_en'} }}</td>
+                                            <td>{{ $category->{'name_ru'} }}</td>
                                             <td>
                                                 <div class="form-button-action">
                                                     <button type="button" data-toggle="tooltip" title="" class="btn btn-link btn-primary btn-lg" data-original-title="Edit Task">
                                                         <i class="fa fa-edit"></i>
                                                     </button>
-                                                    <button type="button"  data-toggle="modal" data-target="#addRowModal" title="" class="btn btn-link btn-danger">
-                                                        <i class="fa fa-times" data-toggle="tooltip" data-original-title="Remove"></i>
+                                                    <button type="button"  data-toggle="modal" data-target="#addRowModal" title="" class="btn btn-link btn-danger" data-original-title="Remove">
+                                                        <i class="fa fa-times"></i>
                                                     </button>
                                                 </div>
                                             </td>
                                         </tr>
                                     @empty
-                                        
+
                                     @endforelse
                                 </tbody>
                             </table>
@@ -138,20 +139,4 @@
         </div>
     </div>
 </div>
-@push('demo-script')
-    <script>
-        $.notify({
-            icon: 'flaticon-alarm-1',
-            title: 'Tabrkilaymiz',
-            message: 'Siz yangi postni muvaqqiyatli qo\'shdingiz',
-        },{
-            type: 'success',
-            placement: {
-                from: "top",
-                align: "right"
-            },
-            time: 1000,
-        });
-    </script>
-@endpush
 @endsection

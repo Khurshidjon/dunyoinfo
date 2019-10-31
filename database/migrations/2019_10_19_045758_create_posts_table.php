@@ -30,7 +30,10 @@ class CreatePostsTable extends Migration
             $table->longText('body_ru')->nullable();
             $table->longText('body_en')->nullable();
             $table->integer('author_id');
+            $table->integer('category_id')->nullable();
+            $table->integer('banner')->nullable()->default(0);
             $table->string('status')->nullable()->default('unpublished');
+            $table->integer('view_count')->nullable()->default(0);
             $table->date('deleted_at')->nullable();
             $table->timestamps();
         });

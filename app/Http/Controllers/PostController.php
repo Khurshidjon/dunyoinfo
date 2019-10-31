@@ -2,9 +2,11 @@
 
 namespace App\Http\Controllers;
 
+use App\Category;
 use App\Post;
 use Illuminate\Http\Request;
 use \Cviebrock\EloquentSluggable\Services\SlugService;
+use Intervention\Image\Facades\Image as Image;
 
 class PostController extends Controller
 {
@@ -13,7 +15,7 @@ class PostController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    
+
     public function index()
     {
         $posts = Post::latest()->paginate(15);
@@ -30,7 +32,10 @@ class PostController extends Controller
 
     public function create()
     {
-        return view('backend.posts.create');
+        $categories = Category::where('status', 'published')->get();
+        return view('backend.posts.create', [
+            'categories' => $categories,
+        ]);
     }
 
     /**
@@ -39,7 +44,7 @@ class PostController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    
+
     public function store(Request $request)
     {
         $post = new Post();
@@ -57,14 +62,69 @@ class PostController extends Controller
         $post->body_ru = $request->body_ru;
         $post->body_en = $request->body_en;
         $post->author_id = \Auth::id();
-        $post->status = $request->get('status');
-        $filename = $request->file('image');
+        $post->status =  $request->get('status');
+        $post->category_id = 1 * $request->get('category');
+        if ($request->get('banner') == "on"){
+            $post->banner = 1;
+        }else{
+            $post->banner = 0;
+        }
+        dd($post->banner);
+        $file = $request->file('image');
 
-        if($filename){
-            $post->image = $filename->store('Posts'.'/'.date('fY'), 'public');
+        if($file){
+
+            $filenamewithextension = $request->file('image')->getClientOriginalName();
+
+            //get filename without extension
+            $filename = pathinfo($filenamewithextension, PATHINFO_FILENAME);
+
+            //get file extension
+            $extension = $request->file('image')->getClientOriginalExtension();
+
+            //filename to store
+            $filenametostore = $filename.time().'.'.$extension;
+
+            //small thumbnail name
+            $smallthumbnail = $filename.time().'.'.$extension;
+
+            //medium thumbnail name
+            $mediumthumbnail = $filename.time().'.'.$extension;
+
+            //large thumbnail name
+            $largethumbnail = $filename.time().'.'.$extension;
+
+            //Upload File
+            $request->file('image')->storeAs('public/images', $filenametostore);
+
+            $request->file('image')->storeAs('public/images/thumbnailSmall', $smallthumbnail);
+            $request->file('image')->storeAs('public/images/thumbnailMedium', $mediumthumbnail);
+            $request->file('image')->storeAs('public/images/thumbnailLarge', $largethumbnail);
+
+            //create small thumbnail
+            $smallthumbnailpath = public_path('storage/images/thumbnailSmall/'. $smallthumbnail);
+            $this->createThumbnail($smallthumbnailpath, 270, 225);
+
+            //create medium thumbnail
+            $mediumthumbnailpath = public_path('storage/images/thumbnailMedium/'. $mediumthumbnail);
+            $this->createThumbnail($mediumthumbnailpath, 572, 350);
+
+            //create large thumbnail
+            $largethumbnailpath = public_path('storage/images/thumbnailLarge/'. $largethumbnail);
+            $this->createThumbnail($largethumbnailpath, 450, 258);
+
+            $post->image = $filenametostore;
         }
         $post->save();
         return redirect()->route('posts.index')->with('success', 'Post has been created successfully');
+    }
+
+    public function createThumbnail($path, $width, $height)
+    {
+        $img = Image::make($path)->resize($width, $height, function ($constraint) {
+            $constraint->aspectRatio();
+        });
+        $img->save($path);
     }
 
     /**

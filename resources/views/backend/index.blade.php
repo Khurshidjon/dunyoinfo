@@ -548,6 +548,21 @@
     </div>
     @push('demo-script')
         <script src="{{ asset('backend/js/demo.js') }}"></script> 
+
+        <script>
+            $.notify({
+                icon: 'flaticon-alarm-1',
+                title: 'DUNYO.INFO',
+                message: '<a href="#">Admin paneldan foydalanish bo\'yicha yo\'riqnoma</a>',
+            },{
+                type: 'info',
+                placement: {
+                    from: "top",
+                    align: "right"
+                },
+                time: 5000,
+            });
+        </script>
     @endpush
 
 @endsection

@@ -93,8 +93,6 @@ return [
     |
     */
 
-    'locales' => ['uz', 'cyrl', 'ru', 'en'],
-
     'fallback_locale' => 'en',
 
     /*
@@ -167,12 +165,11 @@ return [
         /*
          * Package Service Providers...
          */
-        
+
         UniSharp\LaravelFilemanager\LaravelFilemanagerServiceProvider::class,
         Intervention\Image\ImageServiceProvider::class,
         Spatie\Permission\PermissionServiceProvider::class,
         Mcamara\LaravelLocalization\LaravelLocalizationServiceProvider::class,
-
         /*
          * Application Service Providers...
          */

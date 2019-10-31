@@ -1,5 +1,9 @@
 @extends('layouts.admin')
 @section('content')
+    @php
+        $lang = App::getLocale();
+
+    @endphp
 <div class="content">
     <div class="page-inner">
         <div class="page-header">
@@ -14,13 +18,13 @@
                     <i class="flaticon-right-arrow"></i>
                 </li>
                 <li class="nav-item">
-                    <a href="#">POSTS</a>
+                    <a href="{{ route('posts.index') }}">POSTS</a>
                 </li>
                 <li class="separator">
                     <i class="flaticon-right-arrow"></i>
                 </li>
                 <li class="nav-item">
-                    <a href="#">Datatables</a>
+                    <a href="#">Create</a>
                 </li>
             </ul>
         </div>
@@ -31,7 +35,7 @@
                         <h4>ADD NEW POST</h4>
                     </div>
                     <form action="{{ route('posts.store') }}" method="POST" enctype="multipart/form-data">
-                        @csrf 
+                        @csrf
                         <div class="card-body">
                             <ul class="nav nav-tabs">
                                 <li class="nav-item">
@@ -47,8 +51,8 @@
                                     <a class="nav-link" data-toggle="tab" href="#menu3">Русский</a>
                                 </li>
                             </ul>
-                                
-                                              <!-- Tab panes -->
+
+                          <!-- Tab panes -->
                             <div class="tab-content">
                                 <div class="tab-pane container-fluid active" id="home">
                                     <label class="mt-3 mb-3"><b>O'zbek titldagi ma'lumotlar</b></label>
@@ -112,18 +116,37 @@
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="col-md-6">
+                                <div class="col-md-3">
                                     <div class="form-group">
-                                        <input type="file" name="image" class="form-control" id="">
+                                        <label for="image">Image</label>
+                                        <input id="image" type="file" name="image" class="form-control">
                                     </div>
                                 </div>
-                                <div class="col-md-6">
+                                <div class="col-md-3">
                                     <div class="form-group">
-                                        <select name="status" id="" class="form-control">
+                                        <label for="status">Status</label>
+                                        <select name="status" id="status" class="form-control">
                                             <option value="" disabled>-- select status --</option>
                                             <option value="published">Published</option>
                                             <option value="unpublished" selected>Unpublished</option>
                                         </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <label for="categories">Categories</label>
+                                        <select name="category" id="categories" class="form-control">
+                                            <option value="" disabled>-- select status --</option>
+                                            @foreach($categories as $category)
+                                                <option value="{{ $category->id }}">{{ $category->{'name_' .$lang} }}</option>
+                                            @endforeach
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <label for="banner">Banner</label>
+                                        <input type="checkbox" name="banner" id="banner" class="form-control">
                                     </div>
                                 </div>
                             </div>

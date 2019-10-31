@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="{{ asset('css/app.css') }}">
     <style>
         .body-content{
-            background-color:#f0f0dc;
+            background-color:#f9f9f9;
             height: 100%;
             width: 100%;
             position: absolute;
@@ -20,6 +20,7 @@
             padding-top: 7px;
             max-width: 50em;
             height: 20.5em;
+            box-shadow: 0 0 20px 1px grey;
         }
         .user-avatar{
             background: url("../../../backend/img/admin-icon.png") center;

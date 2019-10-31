@@ -39,20 +39,19 @@ Route::group(
         Route::get('/entertainment', 'FrontendController@listing')->name('frontend.entertainment');
         Route::get('/health', 'FrontendController@listing')->name('frontend.health');
         Route::get('/lifestyle', 'FrontendController@listing')->name('frontend.lifestyle');
-  
-
 
 
     Auth::routes();
-
     Route::get('/home', 'HomeController@index')->name('home');
 
+//    Admin qism uchun
     Route::get('/admin/login/page', 'BackendController@loginPage')->name('admin.login');
+    Route::get('/admin', 'BackendController@index')->name('admin.index');
 
-        Route::get('/admin', 'BackendController@index')->name('admin.index');
-
-    Route::group(['prefix' => 'admin', 'middleware' => 'role:Admin'], function () {
+    Route::group(['prefix' => 'admin', 'middleware' => ['auth', 'role:Admin']], function () {
         Route::resource('/posts', 'PostController');
+        Route::resource('/menus', 'MenuController');
+        Route::resource('/categories', 'CategoryController');
         Route::get('/forms', 'BackendController@form')->name('admin.forms');
         Route::get('/tables', 'BackendController@tables')->name('admin.tables');
     });
