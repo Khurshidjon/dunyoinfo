@@ -69,13 +69,14 @@ class PostController extends Controller
         }else{
             $post->banner = 0;
         }
-        dd($post->banner);
+        // dd($post->banner);
         $file = $request->file('image');
 
         if($file){
 
             $filenamewithextension = $request->file('image')->getClientOriginalName();
-
+            $filenamewithextension = str_replace(' ', '-', $filenamewithextension);
+            // dd($filenamewithextension);
             //get filename without extension
             $filename = pathinfo($filenamewithextension, PATHINFO_FILENAME);
 
@@ -86,32 +87,52 @@ class PostController extends Controller
             $filenametostore = $filename.time().'.'.$extension;
 
             //small thumbnail name
-            $smallthumbnail = $filename.time().'.'.$extension;
+            $thumbnail450x258 = $filename.time().'.'.$extension;
 
             //medium thumbnail name
-            $mediumthumbnail = $filename.time().'.'.$extension;
+            $thumbnail371x208 = $filename.time().'.'.$extension;
 
             //large thumbnail name
-            $largethumbnail = $filename.time().'.'.$extension;
+            $thumbnail472x270 = $filename.time().'.'.$extension;
+            $thumbnail270x225 = $filename.time().'.'.$extension;
+            $thumbnail95x95 = $filename.time().'.'.$extension;
+            $thumbnail600x600 = $filename.time().'.'.$extension;
 
             //Upload File
+            
             $request->file('image')->storeAs('public/images', $filenametostore);
 
-            $request->file('image')->storeAs('public/images/thumbnailSmall', $smallthumbnail);
-            $request->file('image')->storeAs('public/images/thumbnailMedium', $mediumthumbnail);
-            $request->file('image')->storeAs('public/images/thumbnailLarge', $largethumbnail);
+            $request->file('image')->storeAs('public/images/450x258', $thumbnail450x258);
+            $request->file('image')->storeAs('public/images/371x208', $thumbnail371x208);
+            $request->file('image')->storeAs('public/images/472x270', $thumbnail472x270);
+            $request->file('image')->storeAs('public/images/270x225', $thumbnail270x225);
+            $request->file('image')->storeAs('public/images/95x95', $thumbnail95x95);
+            $request->file('image')->storeAs('public/images/600x600', $thumbnail600x600);
 
             //create small thumbnail
-            $smallthumbnailpath = public_path('storage/images/thumbnailSmall/'. $smallthumbnail);
-            $this->createThumbnail($smallthumbnailpath, 270, 225);
+            $thumbnail450x258path = public_path('storage/images/450x258/'. $thumbnail450x258);
+            $this->createThumbnail($thumbnail450x258path, 450, 258);
 
             //create medium thumbnail
-            $mediumthumbnailpath = public_path('storage/images/thumbnailMedium/'. $mediumthumbnail);
-            $this->createThumbnail($mediumthumbnailpath, 572, 350);
+            $thumbnail371x208path = public_path('storage/images/371x208/'. $thumbnail371x208);
+            $this->createThumbnail($thumbnail371x208path, 371, 208);
 
             //create large thumbnail
-            $largethumbnailpath = public_path('storage/images/thumbnailLarge/'. $largethumbnail);
-            $this->createThumbnail($largethumbnailpath, 450, 258);
+            $thumbnail472x270path = public_path('storage/images/472x270/'. $thumbnail472x270);
+            $this->createThumbnail($thumbnail472x270path, 472, 270);
+
+            //create small thumbnail
+            $thumbnail270x225path = public_path('storage/images/270x225/'. $thumbnail270x225);
+            $this->createThumbnail($thumbnail270x225path, 270, 225);
+
+            //create medium thumbnail
+            $thumbnail95x95path = public_path('storage/images/95x95/'. $thumbnail95x95);
+            $this->createThumbnail($thumbnail95x95path, 95, 95);
+
+            //create large thumbnail
+            $thumbnail600x600path = public_path('storage/images/600x600/'. $thumbnail600x600);
+            $this->createThumbnail($thumbnail600x600path, 600, 600);
+
 
             $post->image = $filenametostore;
         }
@@ -121,8 +142,8 @@ class PostController extends Controller
 
     public function createThumbnail($path, $width, $height)
     {
-        $img = Image::make($path)->resize($width, $height, function ($constraint) {
-            $constraint->aspectRatio();
+        $img = Image::make($path)->fit($width, $height, function ($constraint) {
+            $constraint->upsize();
         });
         $img->save($path);
     }

@@ -21,7 +21,7 @@ $lang = App::getLocale();
                 </ul>
             </div>
         </div><!-- #breaking-news -->
-    
+
         <div class="section">
             <div class="row">
                 <div class="site-content col-md-9">
@@ -35,7 +35,7 @@ $lang = App::getLocale();
                                         </div>
                                         <div class="catagory world"><a href="#">World</a></div>
                                     </div>
-                                    <div class="post-content">								
+                                    <div class="post-content">
                                         <div class="entry-meta">
                                             <ul class="list-inline">
                                                 <li class="publish-date"><i class="fa fa-clock-o"></i><a href="#"> Nov 1, 2015 </a></li>
@@ -48,7 +48,7 @@ $lang = App::getLocale();
                                             <a href="news-details.html">We Are Seeing The Effects Of The Minimum Wage Rise In San Francisco</a>
                                         </h2>
                                     </div>
-                                </div><!--/post--> 
+                                </div><!--/post-->
                                 <div class="post feature-post">
                                     <div class="entry-header">
                                         <div class="entry-thumbnail">
@@ -56,7 +56,7 @@ $lang = App::getLocale();
                                         </div>
                                         <div class="catagory sports"><a href="#">Sports</a></div>
                                     </div>
-                                    <div class="post-content">								
+                                    <div class="post-content">
                                         <div class="entry-meta">
                                             <ul class="list-inline">
                                                 <li class="publish-date"><i class="fa fa-clock-o"></i><a href="#"> Nov 1, 2015 </a></li>
@@ -69,7 +69,7 @@ $lang = App::getLocale();
                                             <a href="news-details.html">The 20 moments in sports that tried to break the Internet in 2015</a>
                                         </h2>
                                     </div>
-                                </div><!--/post--> 
+                                </div><!--/post-->
                                 <div class="post feature-post">
                                     <div class="entry-header">
                                         <div class="entry-thumbnail">
@@ -77,7 +77,7 @@ $lang = App::getLocale();
                                         </div>
                                         <div class="catagory entertainment"><a href="#">Entertainment</a></div>
                                     </div>
-                                    <div class="post-content">								
+                                    <div class="post-content">
                                         <div class="entry-meta">
                                             <ul class="list-inline">
                                                 <li class="publish-date"><i class="fa fa-clock-o"></i><a href="#"> Nov 1, 2015 </a></li>
@@ -90,7 +90,7 @@ $lang = App::getLocale();
                                             <a href="news-details.html">The best games in 2015 for your new iPhone, iPad, or Android phone</a>
                                         </h2>
                                     </div>
-                                </div><!--/post--> 
+                                </div><!--/post-->
                                 <div class="post feature-post">
                                     <div class="entry-header">
                                         <div class="entry-thumbnail">
@@ -98,7 +98,7 @@ $lang = App::getLocale();
                                         </div>
                                         <div class="catagory world"><a href="#">World</a></div>
                                     </div>
-                                    <div class="post-content">								
+                                    <div class="post-content">
                                         <div class="entry-meta">
                                             <ul class="list-inline">
                                                 <li class="publish-date"><i class="fa fa-clock-o"></i><a href="#"> Nov 1, 2015 </a></li>
@@ -111,7 +111,7 @@ $lang = App::getLocale();
                                             <a href="news-details.html">The Force Awakens doubles previous Christmas Day record with $49.3 million box office</a>
                                         </h2>
                                     </div>
-                                </div><!--/post--> 
+                                </div><!--/post-->
                                 <div class="post feature-post">
                                     <div class="entry-header">
                                         <div class="entry-thumbnail">
@@ -119,7 +119,7 @@ $lang = App::getLocale();
                                         </div>
                                         <div class="catagory sports"><a href="#">Sports</a></div>
                                     </div>
-                                    <div class="post-content">								
+                                    <div class="post-content">
                                         <div class="entry-meta">
                                             <ul class="list-inline">
                                                 <li class="publish-date"><i class="fa fa-clock-o"></i><a href="#"> Nov 1, 2015 </a></li>
@@ -132,7 +132,7 @@ $lang = App::getLocale();
                                             <a href="news-details.html">Bran Stark is all grown up in new 'Game of Thrones' Season 6 photo</a>
                                         </h2>
                                     </div>
-                                </div><!--/post--> 
+                                </div><!--/post-->
                                 <div class="post feature-post">
                                     <div class="entry-header">
                                         <div class="entry-thumbnail">
@@ -140,7 +140,7 @@ $lang = App::getLocale();
                                         </div>
                                         <div class="catagory entertainment"><a href="#">Entertainment</a></div>
                                     </div>
-                                    <div class="post-content">								
+                                    <div class="post-content">
                                         <div class="entry-meta">
                                             <ul class="list-inline">
                                                 <li class="publish-date"><i class="fa fa-clock-o"></i><a href="#"> Nov 1, 2015 </a></li>
@@ -153,7 +153,7 @@ $lang = App::getLocale();
                                             <a href="news-details.html">Watch directors Quentin Tarantino and Paul Thomas Anderson geek out over 70mm film</a>
                                         </h2>
                                     </div>
-                                </div><!--/post--> 
+                                </div><!--/post-->
                                 <div class="post feature-post">
                                     <div class="entry-header">
                                         <div class="entry-thumbnail">
@@ -161,7 +161,7 @@ $lang = App::getLocale();
                                         </div>
                                         <div class="catagory world"><a href="#">World</a></div>
                                     </div>
-                                    <div class="post-content">								
+                                    <div class="post-content">
                                         <div class="entry-meta">
                                             <ul class="list-inline">
                                                 <li class="publish-date"><i class="fa fa-clock-o"></i><a href="#"> Nov 1, 2015 </a></li>
@@ -174,7 +174,7 @@ $lang = App::getLocale();
                                             <a href="news-details.html">'Affluenza' teen arrested in Mexican resort after weeks on the run</a>
                                         </h2>
                                     </div>
-                                </div><!--/post--> 
+                                </div><!--/post-->
                                 <div class="post feature-post">
                                     <div class="entry-header">
                                         <div class="entry-thumbnail">
@@ -182,7 +182,7 @@ $lang = App::getLocale();
                                         </div>
                                         <div class="catagory sports"><a href="#">Sports</a></div>
                                     </div>
-                                    <div class="post-content">								
+                                    <div class="post-content">
                                         <div class="entry-meta">
                                             <ul class="list-inline">
                                                 <li class="publish-date"><i class="fa fa-clock-o"></i><a href="#"> Nov 1, 2015 </a></li>
@@ -195,7 +195,7 @@ $lang = App::getLocale();
                                             <a href="news-details.html">Peyton Manning deserved a better ending -- if he's telling the truth</a>
                                         </h2>
                                     </div>
-                                </div><!--/post--> 
+                                </div><!--/post-->
                                 <div class="post feature-post">
                                     <div class="entry-header">
                                         <div class="entry-thumbnail">
@@ -203,7 +203,7 @@ $lang = App::getLocale();
                                         </div>
                                         <div class="catagory entertainment"><a href="#">Entertainment</a></div>
                                     </div>
-                                    <div class="post-content">								
+                                    <div class="post-content">
                                         <div class="entry-meta">
                                             <ul class="list-inline">
                                                 <li class="publish-date"><i class="fa fa-clock-o"></i><a href="#"> Nov 1, 2015 </a></li>
@@ -216,7 +216,7 @@ $lang = App::getLocale();
                                             <a href="news-details.html">44 books on 44 presidents: Welcome, folks, to the Adams administration</a>
                                         </h2>
                                     </div>
-                                </div><!--/post--> 
+                                </div><!--/post-->
                             </div>
                         </div>
                         <div class="col-sm-4">
@@ -227,7 +227,7 @@ $lang = App::getLocale();
                                     </div>
                                     <div class="catagory health"><span><a href="#">Health</a></span></div>
                                 </div>
-                                <div class="post-content">								
+                                <div class="post-content">
                                     <div class="entry-meta">
                                         <ul class="list-inline">
                                             <li class="publish-date"><i class="fa fa-clock-o"></i><a href="#"> Nov 7, 2015 </a></li>
@@ -239,7 +239,7 @@ $lang = App::getLocale();
                                         <a href="news-details.html">Manhunt intensifies for fugitive in Kentucky, Tennessee</a>
                                     </h2>
                                 </div>
-                            </div><!--/post--> 
+                            </div><!--/post-->
                         </div>
                     </div>
                     <div class="row">
@@ -251,7 +251,7 @@ $lang = App::getLocale();
                                     </div>
                                     <div class="catagory technology"><span><a href="#">Technology</a></span></div>
                                 </div>
-                                <div class="post-content">								
+                                <div class="post-content">
                                     <div class="entry-meta">
                                         <ul class="list-inline">
                                             <li class="publish-date"><i class="fa fa-clock-o"></i><a href="#"> Nov 2, 2015 </a></li>
@@ -263,7 +263,7 @@ $lang = App::getLocale();
                                         <a href="news-details.html">Japan in four gorgeous Pokémon-themed colors</a>
                                     </h2>
                                 </div>
-                            </div><!--/post--> 	
+                            </div><!--/post-->
                         </div>
                         <div class="col-sm-4">
                             <div class="post feature-post">
@@ -273,7 +273,7 @@ $lang = App::getLocale();
                                     </div>
                                     <div class="catagory entertainment"><a href="#">Entertainment</a></div>
                                 </div>
-                                <div class="post-content">								
+                                <div class="post-content">
                                     <div class="entry-meta">
                                         <ul class="list-inline">
                                             <li class="publish-date"><i class="fa fa-clock-o"></i><a href="#"> Nov 3, 2015 </a></li>
@@ -285,7 +285,7 @@ $lang = App::getLocale();
                                         <a href="news-details.html">We finally found out how BB-8 really works</a>
                                     </h2>
                                 </div>
-                            </div><!--/post--> 
+                            </div><!--/post-->
                         </div>
                         <div class="col-sm-4">
                             <div class="post feature-post">
@@ -295,7 +295,7 @@ $lang = App::getLocale();
                                     </div>
                                     <div class="catagory politics"><span><a href="#">Politics</a></span></div>
                                 </div>
-                                <div class="post-content">								
+                                <div class="post-content">
                                     <div class="entry-meta">
                                         <ul class="list-inline">
                                             <li class="publish-date"><i class="fa fa-clock-o"></i><a href="#"> Nov 5, 2015 </a></li>
@@ -307,26 +307,26 @@ $lang = App::getLocale();
                                         <a href="news-details.html">And the most streamed Beatles song on Spotify is..</a>
                                     </h2>
                                 </div>
-                            </div><!--/post--> 
+                            </div><!--/post-->
                         </div>
                     </div>
-                </div><!--/#content--> 
-                
+                </div><!--/#content-->
+
                 <div class="col-md-3 visible-md visible-lg">
                     <div class="add featured-add">
                         <a href="#"><img class="img-responsive" src="{{ asset('frontend/images/post/add/add1.jpg') }}" alt="" /></a>
                     </div>
-                </div><!--/#add--> 
+                </div><!--/#add-->
             </div>
-        </div><!--/.section--> 
-                
+        </div><!--/.section-->
+
         <div class="section add inner-add">
             <a href="#"><img class="img-responsive" src="{{ asset('frontend/images/post/add/add2.jpg') }}" alt="" /></a>
         </div><!--/.section-->
-        
-        <div class="section">				
+
+        <div class="section">
             <div class="latest-news-wrapper">
-                <h1 class="section-title"><span>Latest News</span></h1>	
+                <h1 class="section-title"><span>Latest News</span></h1>
                 <div id="latest-news">
                     <div class="post medium-post">
                         <div class="entry-header">
@@ -335,7 +335,7 @@ $lang = App::getLocale();
                             </div>
                             <div class="catagory politics"><span><a href="#">Politics</a></span></div>
                         </div>
-                        <div class="post-content">								
+                        <div class="post-content">
                             <div class="entry-meta">
                                 <ul class="list-inline">
                                     <li class="publish-date"><a href="#"><i class="fa fa-clock-o"></i> Nov 5, 2015 </a></li>
@@ -347,7 +347,7 @@ $lang = App::getLocale();
                                 <a href="news-details.html">Our closest relatives aren't fans of daylight saving time</a>
                             </h2>
                         </div>
-                    </div><!--/post--> 
+                    </div><!--/post-->
                     <div class="post medium-post">
                         <div class="entry-header">
                             <div class="entry-thumbnail">
@@ -355,7 +355,7 @@ $lang = App::getLocale();
                             </div>
                             <div class="catagory world"><a href="#">World</a></div>
                         </div>
-                        <div class="post-content">								
+                        <div class="post-content">
                             <div class="entry-meta">
                                 <ul class="list-inline">
                                     <li class="publish-date"><a href="#"><i class="fa fa-clock-o"></i> Nov 5, 2015 </a></li>
@@ -367,7 +367,7 @@ $lang = App::getLocale();
                                 <a href="news-details.html">44 books on 44 presidents: Welcome, folks, to the Adams</a>
                             </h2>
                         </div>
-                    </div><!--/post--> 
+                    </div><!--/post-->
                     <div class="post medium-post">
                         <div class="entry-header">
                             <div class="entry-thumbnail">
@@ -375,7 +375,7 @@ $lang = App::getLocale();
                             </div>
                             <div class="catagory health"><span><a href="#">Health</a></span></div>
                         </div>
-                        <div class="post-content">								
+                        <div class="post-content">
                             <div class="entry-meta">
                                 <ul class="list-inline">
                                     <li class="publish-date"><a href="#"><i class="fa fa-clock-o"></i> Nov 5, 2015 </a></li>
@@ -387,7 +387,7 @@ $lang = App::getLocale();
                                 <a href="news-details.html">And the most streamed Beatles song on Spotify is...</a>
                             </h2>
                         </div>
-                    </div><!--/post--> 
+                    </div><!--/post-->
 
                     <div class="post medium-post">
                         <div class="entry-header">
@@ -396,7 +396,7 @@ $lang = App::getLocale();
                             </div>
                             <div class="catagory sports"><span><a href="#">Sports</a></span></div>
                         </div>
-                        <div class="post-content">								
+                        <div class="post-content">
                             <div class="entry-meta">
                                 <ul class="list-inline">
                                     <li class="publish-date"><a href="#"><i class="fa fa-clock-o"></i> Nov 5, 2015 </a></li>
@@ -408,8 +408,8 @@ $lang = App::getLocale();
                                 <a href="news-details.html">NBA suspends Matt Barnes for attack on Derek Fisher</a>
                             </h2>
                         </div>
-                    </div><!--/post--> 
-                    
+                    </div><!--/post-->
+
                     <div class="post medium-post">
                         <div class="entry-header">
                             <div class="entry-thumbnail">
@@ -417,7 +417,7 @@ $lang = App::getLocale();
                             </div>
                             <div class="catagory politics"><span><a href="#">Politics</a></span></div>
                         </div>
-                        <div class="post-content">								
+                        <div class="post-content">
                             <div class="entry-meta">
                                 <ul class="list-inline">
                                     <li class="publish-date"><a href="#"><i class="fa fa-clock-o"></i> Nov 5, 2015 </a></li>
@@ -429,7 +429,7 @@ $lang = App::getLocale();
                                 <a href="news-details.html">At Facebook who suggests tags for all of your photos</a>
                             </h2>
                         </div>
-                    </div><!--/post--> 
+                    </div><!--/post-->
 
                     <div class="post medium-post">
                         <div class="entry-header">
@@ -438,7 +438,7 @@ $lang = App::getLocale();
                             </div>
                             <div class="catagory entertainment"><span><a href="#">Entertainment</a></span></div>
                         </div>
-                        <div class="post-content">								
+                        <div class="post-content">
                             <div class="entry-meta">
                                 <ul class="list-inline">
                                     <li class="publish-date"><a href="#"><i class="fa fa-clock-o"></i> Nov 5, 2015 </a></li>
@@ -450,7 +450,7 @@ $lang = App::getLocale();
                                 <a href="news-details.html">Suspicion of plotting New Year's Eve attacks in Belgium</a>
                             </h2>
                         </div>
-                    </div><!--/post--> 
+                    </div><!--/post-->
                     <div class="post medium-post">
                         <div class="entry-header">
                             <div class="entry-thumbnail">
@@ -458,7 +458,7 @@ $lang = App::getLocale();
                             </div>
                             <div class="catagory sports"><span><a href="#">Sports</a></span></div>
                         </div>
-                        <div class="post-content">								
+                        <div class="post-content">
                             <div class="entry-meta">
                                 <ul class="list-inline">
                                     <li class="publish-date"><a href="#"><i class="fa fa-clock-o"></i> Nov 5, 2015 </a></li>
@@ -470,8 +470,8 @@ $lang = App::getLocale();
                                 <a href="news-details.html">Someone has calculated the total cost of saving Matt</a>
                             </h2>
                         </div>
-                    </div><!--/post--> 
-                    
+                    </div><!--/post-->
+
                     <div class="post medium-post">
                         <div class="entry-header">
                             <div class="entry-thumbnail">
@@ -479,7 +479,7 @@ $lang = App::getLocale();
                             </div>
                             <div class="catagory politics"><span><a href="#">Politics</a></span></div>
                         </div>
-                        <div class="post-content">								
+                        <div class="post-content">
                             <div class="entry-meta">
                                 <ul class="list-inline">
                                     <li class="publish-date"><a href="#"><i class="fa fa-clock-o"></i> Nov 5, 2015 </a></li>
@@ -491,7 +491,7 @@ $lang = App::getLocale();
                                 <a href="news-details.html">Homemade lightsaber made with laser can cut wires</a>
                             </h2>
                         </div>
-                    </div><!--/post--> 
+                    </div><!--/post-->
 
                     <div class="post medium-post">
                         <div class="entry-header">
@@ -500,7 +500,7 @@ $lang = App::getLocale();
                             </div>
                             <div class="catagory entertainment"><span><a href="#">Entertainment</a></span></div>
                         </div>
-                        <div class="post-content">								
+                        <div class="post-content">
                             <div class="entry-meta">
                                 <ul class="list-inline">
                                     <li class="publish-date"><a href="#"><i class="fa fa-clock-o"></i> Nov 5, 2015 </a></li>
@@ -512,11 +512,11 @@ $lang = App::getLocale();
                                 <a href="news-details.html">Our closest relatives aren't fans of daylight saving time</a>
                             </h2>
                         </div>
-                    </div><!--/post--> 
+                    </div><!--/post-->
                 </div>
             </div><!--/.latest-news-wrapper-->
         </div><!--/.section-->
-			
+
         <div class="section">
             <div class="row">
                 <div class="col-md-9 col-sm-8">
@@ -525,16 +525,16 @@ $lang = App::getLocale();
                             <div class="col-md-8 col-sm-6">
                                 <div class="left-content">
                                     <div class="section world-news">
-                                        <h1 class="section-title title">Worlds</h1>	
-                                        <div class="world-nav cat-menu">         
-                                            <ul class="list-inline">                       
+                                        <h1 class="section-title title">Worlds</h1>
+                                        <div class="world-nav cat-menu">
+                                            <ul class="list-inline">
                                                 <li class="active"><a href="#">Us</a></li>
                                                 <li><a href="#">Crime</a></li>
                                                 <li><a href="#">Local</a></li>
                                                 <li><a href="#">Offbet</a></li>
                                                 <li><a href="#">Openion</a></li>
                                                 <li><a href="#">See All</a></li>
-                                            </ul> 					
+                                            </ul>
                                         </div>
                                         <div class="post">
                                             <div class="entry-header">
@@ -542,7 +542,7 @@ $lang = App::getLocale();
                                                     <img class="img-responsive" src="{{ asset('frontend/images/post/w1.jpg') }}" alt="" />
                                                 </div>
                                             </div>
-                                            <div class="post-content">								
+                                            <div class="post-content">
                                                 <div class="entry-meta">
                                                     <ul class="list-inline">
                                                         <li class="publish-date"><a href="#"><i class="fa fa-clock-o"></i> Nov 15, 2015 </a></li>
@@ -564,10 +564,10 @@ $lang = App::getLocale();
                                                     <li><a href="#">NBA impersonator does incredible Curry & Green impressions<i class="fa fa-angle-right"></i></a></li>
                                                     <li><a href="#">Cellular carriers could gain some surprising competitors <i class="fa fa-angle-right"></i></a></li>
                                                 </ul>
-                                            </div><!--/list-post--> 
-                                        </div><!--/post--> 
+                                            </div><!--/list-post-->
+                                        </div><!--/post-->
                                     </div><!--/.section-->
-                                    
+
                                     <div class="section technology-news">
                                         <h1 class="section-title">Technology</h1>
                                         <div class="row">
@@ -578,7 +578,7 @@ $lang = App::getLocale();
                                                             <img class="img-responsive" src="{{ asset('frontend/images/post/t1.jpg') }}" alt="" />
                                                         </div>
                                                     </div>
-                                                    <div class="post-content">								
+                                                    <div class="post-content">
                                                         <div class="entry-meta">
                                                             <ul class="list-inline">
                                                                 <li class="publish-date"><a href="#"><i class="fa fa-clock-o"></i> Nov 15, 2015 </a></li>
@@ -594,7 +594,7 @@ $lang = App::getLocale();
                                                             <p>Text of the printing and typesetting industry orem Ipsum has been the industry standard dummy text ever since....</p>
                                                         </div>
                                                     </div>
-                                                </div><!--/post--> 
+                                                </div><!--/post-->
                                             </div>
                                             <div class="col-md-4 col-sm-12">
                                                 <div class="post small-post">
@@ -603,7 +603,7 @@ $lang = App::getLocale();
                                                             <img class="img-responsive" src="{{ asset('frontend/images/post/t2.jpg') }}" alt="" />
                                                         </div>
                                                     </div>
-                                                    <div class="post-content">								
+                                                    <div class="post-content">
                                                         <div class="entry-meta">
                                                             <ul class="list-inline">
                                                                 <li class="publish-date"><a href="#"><i class="fa fa-clock-o"></i> Nov 15, 2015 </a></li>
@@ -613,14 +613,14 @@ $lang = App::getLocale();
                                                             <a href="news-details.html">Samsung Pay will support online shop</a>
                                                         </h2>
                                                     </div>
-                                                </div><!--/post--> 
+                                                </div><!--/post-->
                                                 <div class="post small-post">
                                                     <div class="entry-header">
                                                         <div class="entry-thumbnail">
                                                             <img class="img-responsive" src="{{ asset('frontend/images/post/t3.jpg') }}" alt="" />
                                                         </div>
                                                     </div>
-                                                    <div class="post-content">								
+                                                    <div class="post-content">
                                                         <div class="entry-meta">
                                                             <ul class="list-inline">
                                                                 <li class="publish-date"><a href="#"><i class="fa fa-clock-o"></i> Nov 15, 2015 </a></li>
@@ -630,18 +630,18 @@ $lang = App::getLocale();
                                                             <a href="news-details.html">Why is the media so afraid of Facebook?</a>
                                                         </h2>
                                                     </div>
-                                                </div><!--/post--> 
+                                                </div><!--/post-->
                                             </div>
                                         </div>
-                                    </div><!--/technology-news--> 
-                                    
+                                    </div><!--/technology-news-->
+
                                     <div class="section add inner-add">
                                         <a href="#"><img class="img-responsive" src="{{ asset('frontend/images/post/add/add4.jpg') }}" alt="" /></a>
                                     </div><!--/.section add-->
-                                    
+
                                     <div class="section photo-gallery">
-                                        <h1 class="section-title title">Photo Gallery</h1>	
-                                        <div id="photo-gallery" class="carousel slide carousel-fade post" data-ride="carousel">						
+                                        <h1 class="section-title title">Photo Gallery</h1>
+                                        <div id="photo-gallery" class="carousel slide carousel-fade post" data-ride="carousel">
                                             <div class="carousel-inner">
                                                 <div class="item active">
                                                     <a href="#"><img class="img-responsive" src="{{ asset('frontend/images/gallery/1.jpg') }}" alt="" /></a>
@@ -681,7 +681,7 @@ $lang = App::getLocale();
                                                 </div>
                                             </div>
                                             <!--/carousel-inner-->
-                                            
+
                                             <ol class="gallery-indicators carousel-indicators">
                                                 <li data-target="#photo-gallery" data-slide-to="0" class="active">
                                                     <img class="img-responsive" src="{{ asset('frontend/images/gallery/thumb1.png') }}" alt="" />
@@ -711,14 +711,14 @@ $lang = App::getLocale();
                                                     <img class="img-responsive" src="{{ asset('frontend/images/gallery/thumb9.png') }}" alt="" />
                                                 </li>
                                             </ol><!--/gallery-indicators-->
-                                            
+
                                             <div class="gallery-turner">
                                                 <a class="left-photo" href="#photo-gallery" role="button" data-slide="prev"><i class="fa fa-angle-left"></i></a>
                                                 <a class="right-photo" href="#photo-gallery" role="button" data-slide="next"><i class="fa fa-angle-right"></i></a>
                                             </div>
                                         </div>
-                                    </div><!--/photo-gallery--> 
-                                    
+                                    </div><!--/photo-gallery-->
+
                                     <div class="section lifestyle-section">
                                         <h1 class="section-title">Life Style</h1>
                                         <div class="row">
@@ -729,7 +729,7 @@ $lang = App::getLocale();
                                                             <img class="img-responsive" src="{{ asset('frontend/images/post/lifestyle/1.jpg') }}" alt="" />
                                                         </div>
                                                     </div>
-                                                    <div class="post-content">								
+                                                    <div class="post-content">
                                                         <div class="entry-meta">
                                                             <ul class="list-inline">
                                                                 <li class="publish-date"><a href="#"><i class="fa fa-clock-o"></i> Nov 15, 2015 </a></li>
@@ -741,14 +741,14 @@ $lang = App::getLocale();
                                                             <a href="news-details.html">Naomi & Liev hit the beach, plus more new celeb pics</a>
                                                         </h2>
                                                     </div>
-                                                </div><!--/post--> 
+                                                </div><!--/post-->
                                                 <div class="post medium-post">
                                                     <div class="entry-header">
                                                         <div class="entry-thumbnail">
                                                             <img class="img-responsive" src="{{ asset('frontend/images/post/lifestyle/2.jpg') }}" alt="" />
                                                         </div>
                                                     </div>
-                                                    <div class="post-content">								
+                                                    <div class="post-content">
                                                         <div class="entry-meta">
                                                             <ul class="list-inline">
                                                                 <li class="publish-date"><a href="#"><i class="fa fa-clock-o"></i> Nov 15, 2015 </a></li>
@@ -760,7 +760,7 @@ $lang = App::getLocale();
                                                             <a href="news-details.html">18 Great Performances in Mediocre Movies in 2015</a>
                                                         </h2>
                                                     </div>
-                                                </div><!--/post--> 
+                                                </div><!--/post-->
                                             </div>
                                             <div class="col-md-6">
                                                 <div class="post medium-post">
@@ -769,7 +769,7 @@ $lang = App::getLocale();
                                                             <img class="img-responsive" src="{{ asset('frontend/images/post/lifestyle/3.jpg') }}" alt="" />
                                                         </div>
                                                     </div>
-                                                    <div class="post-content">								
+                                                    <div class="post-content">
                                                         <div class="entry-meta">
                                                             <ul class="list-inline">
                                                                 <li class="publish-date"><a href="#"><i class="fa fa-clock-o"></i> Nov 15, 2015 </a></li>
@@ -781,14 +781,14 @@ $lang = App::getLocale();
                                                             <a href="news-details.html">How the stars celebrated Christmas on Instagram</a>
                                                         </h2>
                                                     </div>
-                                                </div><!--/post--> 
+                                                </div><!--/post-->
                                                 <div class="post medium-post">
                                                     <div class="entry-header">
                                                         <div class="entry-thumbnail">
                                                             <img class="img-responsive" src="{{ asset('frontend/images/post/lifestyle/4.jpg') }}" alt="" />
                                                         </div>
                                                     </div>
-                                                    <div class="post-content">								
+                                                    <div class="post-content">
                                                         <div class="entry-meta">
                                                             <ul class="list-inline">
                                                                 <li class="publish-date"><a href="#"><i class="fa fa-clock-o"></i> Nov 15, 2015 </a></li>
@@ -800,11 +800,11 @@ $lang = App::getLocale();
                                                             <a href="news-details.html">Celeb Role Models You Can Feel Good About</a>
                                                         </h2>
                                                     </div>
-                                                </div><!--/post--> 
+                                                </div><!--/post-->
                                             </div>
                                         </div>
                                     </div><!--/.lifestyle -->
-                                    
+
                                     <div class="section health-section">
                                         <h1 class="section-title">Health</h1>
                                         <div class="health-feature">
@@ -814,7 +814,7 @@ $lang = App::getLocale();
                                                         <img class="img-responsive" src="{{ asset('frontend/images/post/health/1.jpg') }}" alt="" />
                                                     </div>
                                                 </div>
-                                                <div class="post-content">								
+                                                <div class="post-content">
                                                     <div class="entry-meta">
                                                         <ul class="list-inline">
                                                             <li class="publish-date"><a href="#"><i class="fa fa-clock-o"></i> Nov 15, 2015 </a></li>
@@ -826,7 +826,7 @@ $lang = App::getLocale();
                                                         <a href="news-details.html">HealthNews Salutes: Direct Relief International</a>
                                                     </h2>
                                                 </div>
-                                            </div><!--/post--> 
+                                            </div><!--/post-->
                                         </div>
                                         <div class="row">
                                             <div class="col-sm-12 col-md-6">
@@ -836,7 +836,7 @@ $lang = App::getLocale();
                                                             <img class="img-responsive" src="{{ asset('frontend/images/post/health/2.jpg') }}" alt="" />
                                                         </div>
                                                     </div>
-                                                    <div class="post-content">								
+                                                    <div class="post-content">
                                                         <div class="entry-meta">
                                                             <ul class="list-inline">
                                                                 <li class="publish-date"><a href="#"><i class="fa fa-clock-o"></i> Nov 15, 2015 </a></li>
@@ -846,14 +846,14 @@ $lang = App::getLocale();
                                                             <a href="news-details.html">EBreakfast Cereal: The Marketing of Sugar</a>
                                                         </h2>
                                                     </div>
-                                                </div><!--/post--> 
+                                                </div><!--/post-->
                                                 <div class="post small-post">
                                                     <div class="entry-header">
                                                         <div class="entry-thumbnail">
                                                             <img class="img-responsive" src="{{ asset('frontend/images/post/health/3.jpg') }}" alt="" />
                                                         </div>
                                                     </div>
-                                                    <div class="post-content">								
+                                                    <div class="post-content">
                                                         <div class="entry-meta">
                                                             <ul class="list-inline">
                                                                 <li class="publish-date"><a href="#"><i class="fa fa-clock-o"></i> Nov 15, 2015 </a></li>
@@ -863,7 +863,7 @@ $lang = App::getLocale();
                                                             <a href="news-details.html">Giving Holiday Thanks for Pumpkins</a>
                                                         </h2>
                                                     </div>
-                                                </div><!--/post--> 
+                                                </div><!--/post-->
                                             </div>
                                             <div class="col-sm-12 col-md-6">
                                                 <div class="post small-post">
@@ -872,7 +872,7 @@ $lang = App::getLocale();
                                                             <img class="img-responsive" src="{{ asset('frontend/images/post/health/4.jpg') }}" alt="" />
                                                         </div>
                                                     </div>
-                                                    <div class="post-content">								
+                                                    <div class="post-content">
                                                         <div class="entry-meta">
                                                             <ul class="list-inline">
                                                                 <li class="publish-date"><a href="#"><i class="fa fa-clock-o"></i> Nov 15, 2015 </a></li>
@@ -882,14 +882,14 @@ $lang = App::getLocale();
                                                             <a href="news-details.html">Aerobic Exercise: The Best Weapon</a>
                                                         </h2>
                                                     </div>
-                                                </div><!--/post--> 
+                                                </div><!--/post-->
                                                 <div class="post small-post">
                                                     <div class="entry-header">
                                                         <div class="entry-thumbnail">
                                                             <img class="img-responsive" src="{{ asset('frontend/images/post/health/5.jpg') }}" alt="" />
                                                         </div>
                                                     </div>
-                                                    <div class="post-content">								
+                                                    <div class="post-content">
                                                         <div class="entry-meta">
                                                             <ul class="list-inline">
                                                                 <li class="publish-date"><a href="#"><i class="fa fa-clock-o"></i> Nov 15, 2015 </a></li>
@@ -899,21 +899,21 @@ $lang = App::getLocale();
                                                             <a href="news-details.html">Minimum drink price 'may breach EU law' </a>
                                                         </h2>
                                                     </div>
-                                                </div><!--/post--> 
+                                                </div><!--/post-->
                                             </div>
                                         </div>
                                     </div><!--/.health-section -->
-                                    
+
                                 </div><!--/.left-content-->
                             </div>
                             <div class="col-md-4 col-sm-6">
                                 <div class="middle-content">
                                     <div class="section sports-section">
                                         <h1 class="section-title title">Sports</h1>
-                                        <div class="sports-nav cat-menu">         
-                                            <a href="#">See all</a>					
+                                        <div class="sports-nav cat-menu">
+                                            <a href="#">See all</a>
                                         </div>
-                                        
+
                                         <div class="football-result post">
                                             <div class="featured-result">
                                                 <h2 class="league-name">Premier League</h2>
@@ -988,7 +988,7 @@ $lang = App::getLocale();
                                                     <img class="img-responsive" src="{{ asset('frontend/images/others/sports1.jpg') }}" alt="" />
                                                 </div>
                                             </div>
-                                            <div class="post-content">								
+                                            <div class="post-content">
                                                 <div class="entry-meta">
                                                     <ul class="list-inline">
                                                         <li class="publish-date"><a href="#"><i class="fa fa-clock-o"></i> Nov 15, 2015 </a></li>
@@ -1000,15 +1000,15 @@ $lang = App::getLocale();
                                                     <a href="news-details.html">Our closest relatives aren't fans of daylight saving time</a>
                                                 </h2>
                                             </div>
-                                        </div><!--/post--> 
-                                        
+                                        </div><!--/post-->
+
                                         <div class="post medium-post">
                                             <div class="entry-header">
                                                 <div class="entry-thumbnail">
                                                     <img class="img-responsive" src="{{ asset('frontend/images/post/sports/2.jpg') }}" alt="" />
                                                 </div>
                                             </div>
-                                            <div class="post-content">								
+                                            <div class="post-content">
                                                 <div class="entry-meta">
                                                     <ul class="list-inline">
                                                         <li class="publish-date"><a href="#"><i class="fa fa-clock-o"></i> Nov 15, 2015 </a></li>
@@ -1020,15 +1020,15 @@ $lang = App::getLocale();
                                                     <a href="news-details.html">Our closest relatives aren't fans of daylight saving time</a>
                                                 </h2>
                                             </div>
-                                        </div><!--/post--> 
-                                        
+                                        </div><!--/post-->
+
                                         <div class="post medium-post">
                                             <div class="entry-header">
                                                 <div class="entry-thumbnail">
                                                     <img class="img-responsive" src="{{ asset('frontend/images/post/sports/1.jpg') }}" alt="" />
                                                 </div>
                                             </div>
-                                            <div class="post-content">								
+                                            <div class="post-content">
                                                 <div class="entry-meta">
                                                     <ul class="list-inline">
                                                         <li class="publish-date"><a href="#"><i class="fa fa-clock-o"></i> Nov 15, 2015 </a></li>
@@ -1040,42 +1040,42 @@ $lang = App::getLocale();
                                                     <a href="news-details.html">Our closest relatives aren't fans of daylight saving time</a>
                                                 </h2>
                                             </div>
-                                        </div><!--/post--> 
-                                        
+                                        </div><!--/post-->
+
                                     </div><!--/.sports-section -->
-                                    
+
                                     <div class="section">
                                         <div class="add inner-add">
                                             <a href="#"><img class="img-responsive" src="{{ asset('frontend/images/post/add/add5.jpg') }}" alt="" /></a>
                                         </div>
                                     </div>
-                                    
+
                                     <div class="section video-section">
                                         <h1 class="section-title title">Watch Video</h1>
                                         <div class="post video-post medium-post">
                                             <div class="entry-header">
                                                 <div class="entry-thumbnail embed-responsive embed-responsive-16by9">
-                                                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/-WlqrkXImsk"  allowfullscreen></iframe>
+                                                    <iframe class="embed-responsive-item" src="{{--https://www.youtube.com/embed/-WlqrkXImsk--}}"  allowfullscreen></iframe>
                                                 </div>
                                             </div>
-                                            <div class="post-content">								
+                                            <div class="post-content">
                                                 <div class="video-catagory"><a href="#">World</a></div>
                                                 <h2 class="entry-title">
                                                     <a href="news-details.html">Our closest relatives aren't fans of daylight saving time</a>
                                                 </h2>
                                             </div>
                                         </div><!--/post-->
-                                        
+
                                         <div class="video-post-list">
                                             <ul>
                                                 <li>
                                                     <div class="post video-post small-post">
                                                         <div class="entry-header">
                                                             <div class="entry-thumbnail embed-responsive embed-responsive-16by9">
-                                                                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/-WlqrkXImsk"  allowfullscreen></iframe>
+                                                                <iframe class="embed-responsive-item" src="{{--https://www.youtube.com/embed/-WlqrkXImsk--}}"  allowfullscreen></iframe>
                                                             </div>
                                                         </div>
-                                                        <div class="post-content">								
+                                                        <div class="post-content">
                                                             <div class="video-catagory"><a href="#">World</a></div>
                                                             <h2 class="entry-title">
                                                                 <a href="news-details.html">Our closest relatives aren't fans of daylight saving time</a>
@@ -1087,10 +1087,10 @@ $lang = App::getLocale();
                                                     <div class="post video-post small-post">
                                                         <div class="entry-header">
                                                             <div class="entry-thumbnail embed-responsive embed-responsive-16by9">
-                                                                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/-WlqrkXImsk"  allowfullscreen></iframe>
+                                                                <iframe class="embed-responsive-item" src="{{--https://www.youtube.com/embed/-WlqrkXImsk--}}"  allowfullscreen></iframe>
                                                             </div>
                                                         </div>
-                                                        <div class="post-content">								
+                                                        <div class="post-content">
                                                             <div class="video-catagory"><a href="#">Business</a></div>
                                                             <h2 class="entry-title">
                                                                 <a href="news-details.html">3 students arrested after body-slamming principal</a>
@@ -1102,10 +1102,10 @@ $lang = App::getLocale();
                                                     <div class="post video-post small-post">
                                                         <div class="entry-header">
                                                             <div class="entry-thumbnail embed-responsive embed-responsive-16by9">
-                                                                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/-WlqrkXImsk"  allowfullscreen></iframe>
+                                                                <iframe class="embed-responsive-item" src="{{--https://www.youtube.com/embed/-WlqrkXImsk--}}"  allowfullscreen></iframe>
                                                             </div>
                                                         </div>
-                                                        <div class="post-content">								
+                                                        <div class="post-content">
                                                             <div class="video-catagory"><a href="#">World</a></div>
                                                             <h2 class="entry-title">
                                                                 <a href="news-details.html">Our closest relatives aren't fans of daylight saving time</a>
@@ -1114,9 +1114,9 @@ $lang = App::getLocale();
                                                     </div><!--/post-->
                                                 </li>
                                             </ul>
-                                        </div>											
+                                        </div>
                                     </div> <!-- /.video-section -->
-                                    
+
                                     <div class="section business-section">
                                         <h1 class="section-title">Business</h1>
                                         <div class="post medium-post">
@@ -1125,7 +1125,7 @@ $lang = App::getLocale();
                                                     <img class="img-responsive" src="{{ asset('frontend/images/post/business/4.jpg') }}" alt="" />
                                                 </div>
                                             </div>
-                                            <div class="post-content">								
+                                            <div class="post-content">
                                                 <div class="entry-meta">
                                                     <ul class="list-inline">
                                                         <li class="publish-date"><a href="#"><i class="fa fa-clock-o"></i> Nov 15, 2015 </a></li>
@@ -1137,8 +1137,8 @@ $lang = App::getLocale();
                                                     <a href="news-details.html">We are seeing the effects of the minimum wage san francisco</a>
                                                 </h2>
                                             </div>
-                                        </div><!--/post--> 
-                                        
+                                        </div><!--/post-->
+
                                         <div class="stock-exchange text-center">
                                             <div class="stock-exchange-zone">
                                                 <a href="#"><img class="img-responsive" src="{{ asset('frontend/images/gallery/stock.png') }}" alt="" /></a>
@@ -1157,7 +1157,7 @@ $lang = App::getLocale();
                                                         <div class="col-xs-4 current-price">388.65</div>
                                                         <div class="col-xs-4 current-result">+0.58 <i class="fa fa-caret-up"></i></div>
                                                     </div>
-                                                </div>													
+                                                </div>
                                                 <div class="com-details">
                                                     <div class="row">
                                                         <div class="col-xs-4 com-name">Royal Ba...</div>
@@ -1172,10 +1172,10 @@ $lang = App::getLocale();
                                                         <div class="col-xs-4 current-result">-0.43 <i class="fa fa-caret-down"></i></div>
                                                     </div>
                                                 </div>
-                                            </div>												
+                                            </div>
                                         </div>
                                     </div><!-- /.business-section -->
-                                    
+
                                 </div><!--/.middle-content-->
                             </div>
                         </div>
@@ -1193,13 +1193,13 @@ $lang = App::getLocale();
                                 <li><a href="#"><i class="fa fa-youtube"></i></a></li>
                             </ul>
                         </div><!--/#widget-->
-                        
+
                         <div class="widget">
                             <div class="add">
                                 <a href="#"><img class="img-responsive" src="{{ asset('frontend/images/post/add/add3.jpg') }}" alt="" /></a>
                             </div>
                         </div><!--/#widget-->
-                        
+
                         <div class="widget">
                             <h1 class="section-title title">This is Rising!</h1>
                             <ul class="post-list">
@@ -1210,13 +1210,13 @@ $lang = App::getLocale();
                                                 <img class="img-responsive" src="{{ asset('frontend/images/post/rising/1.jpg') }}" alt="" />
                                             </div>
                                         </div>
-                                        <div class="post-content">								
+                                        <div class="post-content">
                                             <div class="video-catagory"><a href="#">World</a></div>
                                             <h2 class="entry-title">
                                                 <a href="news-details.html">3 students arrested after body-slamming principal</a>
                                             </h2>
                                         </div>
-                                    </div><!--/post--> 
+                                    </div><!--/post-->
                                 </li>
                                 <li>
                                     <div class="post small-post">
@@ -1225,7 +1225,7 @@ $lang = App::getLocale();
                                                 <img class="img-responsive" src="{{ asset('frontend/images/post/rising/2.jpg') }}" alt="" />
                                             </div>
                                         </div>
-                                        <div class="post-content">								
+                                        <div class="post-content">
                                             <div class="video-catagory"><a href="#">Business</a></div>
                                             <h2 class="entry-title">
                                                 <a href="news-details.html">3 students arrested after body-slamming principal</a>
@@ -1240,7 +1240,7 @@ $lang = App::getLocale();
                                                 <img class="img-responsive" src="{{ asset('frontend/images/post/rising/3.jpg') }}" alt="" />
                                             </div>
                                         </div>
-                                        <div class="post-content">								
+                                        <div class="post-content">
                                             <div class="video-catagory"><a href="#">Sports</a></div>
                                             <h2 class="entry-title">
                                                 <a href="news-details.html">3 students arrested after body-slamming principal</a>
@@ -1255,7 +1255,7 @@ $lang = App::getLocale();
                                                 <img class="img-responsive" src="{{ asset('frontend/images/post/rising/4.jpg') }}" alt="" />
                                             </div>
                                         </div>
-                                        <div class="post-content">								
+                                        <div class="post-content">
                                             <div class="video-catagory"><a href="#">Technology</a></div>
                                             <h2 class="entry-title">
                                                 <a href="news-details.html">3 students arrested after body-slamming principal</a>
@@ -1270,7 +1270,7 @@ $lang = App::getLocale();
                                                 <img class="img-responsive" src="{{ asset('frontend/images/post/rising/5.jpg') }}" alt="" />
                                             </div>
                                         </div>
-                                        <div class="post-content">								
+                                        <div class="post-content">
                                             <div class="video-catagory"><a href="#">Politics</a></div>
                                             <h2 class="entry-title">
                                                 <a href="news-details.html">3 students arrested after body-slamming principal</a>
@@ -1285,7 +1285,7 @@ $lang = App::getLocale();
                                                 <img class="img-responsive" src="{{ asset('frontend/images/post/rising/6.jpg') }}" alt="" />
                                             </div>
                                         </div>
-                                        <div class="post-content">								
+                                        <div class="post-content">
                                             <div class="video-catagory"><a href="#">Health</a></div>
                                             <h2 class="entry-title">
                                                 <a href="news-details.html">3 students arrested after body-slamming principal</a>
@@ -1300,7 +1300,7 @@ $lang = App::getLocale();
                                                 <img class="img-responsive" src="{{ asset('frontend/images/post/rising/7.jpg') }}" alt="" />
                                             </div>
                                         </div>
-                                        <div class="post-content">								
+                                        <div class="post-content">
                                             <div class="video-catagory"><a href="#">Lifestyle</a></div>
                                             <h2 class="entry-title">
                                                 <a href="news-details.html">3 students arrested after body-slamming principal</a>
@@ -1315,7 +1315,7 @@ $lang = App::getLocale();
                                                 <img class="img-responsive" src="{{ asset('frontend/images/post/rising/8.jpg') }}" alt="" />
                                             </div>
                                         </div>
-                                        <div class="post-content">								
+                                        <div class="post-content">
                                             <div class="video-catagory"><a href="#">Entertainment</a></div>
                                             <h2 class="entry-title">
                                                 <a href="news-details.html">3 students arrested after body-slamming principal</a>
@@ -1330,7 +1330,7 @@ $lang = App::getLocale();
                                                 <img class="img-responsive" src="{{ asset('frontend/images/post/7.jpg') }}" alt="" />
                                             </div>
                                         </div>
-                                        <div class="post-content">								
+                                        <div class="post-content">
                                             <div class="video-catagory"><a href="#">Business</a></div>
                                             <h2 class="entry-title">
                                                 <a href="news-details.html">3 students arrested after body-slamming principal</a>
@@ -1340,17 +1340,17 @@ $lang = App::getLocale();
                                 </li>
                             </ul>
                         </div><!--/#widget-->
-                        
+
                         <div class="widget">
                             <div class="add">
                                 <a href="#"><img class="img-responsive" src="{{ asset('frontend/images/post/add/add6.jpg') }}" alt="" /></a>
                             </div>
                         </div><!--/#widget-->
-                        
+
                         <div class="widget weather-widget">
                             <div id="weather-widget"></div>
                         </div><!--/#widget-->
-                        
+
                         <div class="widget meta-widget">
                             <h1 class="section-title title">Widget</h1>
                             <div class="meta-tab">
@@ -1362,10 +1362,10 @@ $lang = App::getLocale();
                                 <div class="tab-content">
                                     <div role="tabpanel" class="tab-pane" id="author">
                                         <ul class="authors-post">
-                                            
+
                                             <li>
                                                 <div class="post small-post">
-                                                    <div class="post-content">	
+                                                    <div class="post-content">
                                                         <div class="entry-meta">
                                                             <ul class="list-inline">
                                                                 <li class="post-author"><a href="#">Jhon Due,</a></li>
@@ -1380,7 +1380,7 @@ $lang = App::getLocale();
                                             </li>
                                             <li>
                                                 <div class="post small-post">
-                                                    <div class="post-content">	
+                                                    <div class="post-content">
                                                         <div class="entry-meta">
                                                             <ul class="list-inline">
                                                                 <li class="post-author"><a href="#">Matt Cloey</a></li>
@@ -1395,7 +1395,7 @@ $lang = App::getLocale();
                                             </li>
                                             <li>
                                                 <div class="post small-post">
-                                                    <div class="post-content">	
+                                                    <div class="post-content">
                                                         <div class="entry-meta">
                                                             <ul class="list-inline">
                                                                 <li class="post-author"><a href="#">KOlony Wispe</a></li>
@@ -1408,7 +1408,7 @@ $lang = App::getLocale();
                                                     </div>
                                                 </div><!--/post-->
                                             </li>
-                                            
+
                                             <li>
                                                 <div class="post small-post">
                                                     <div class="post-content">
@@ -1445,7 +1445,7 @@ $lang = App::getLocale();
                                         <ul class="comment-list">
                                             <li>
                                                 <div class="post small-post">
-                                                    <div class="post-content">	
+                                                    <div class="post-content">
                                                         <div class="entry-meta">
                                                             <ul class="list-inline">
                                                                 <li class="post-author"><a href="#">Matt Cloey ,</a></li>
@@ -1460,7 +1460,7 @@ $lang = App::getLocale();
                                             </li>
                                             <li>
                                                 <div class="post small-post">
-                                                    <div class="post-content">	
+                                                    <div class="post-content">
                                                         <div class="entry-meta">
                                                             <ul class="list-inline">
                                                                 <li class="post-author"><a href="#">Jhon Due ,</a></li>
@@ -1475,7 +1475,7 @@ $lang = App::getLocale();
                                             </li>
                                             <li>
                                                 <div class="post small-post">
-                                                    <div class="post-content">	
+                                                    <div class="post-content">
                                                         <div class="entry-meta">
                                                             <ul class="list-inline">
                                                                 <li class="post-author"><a href="#">KOlony Wispe ,</a></li>
@@ -1490,7 +1490,7 @@ $lang = App::getLocale();
                                             </li>
                                             <li>
                                                 <div class="post small-post">
-                                                    <div class="post-content">	
+                                                    <div class="post-content">
                                                         <div class="entry-meta">
                                                             <ul class="list-inline">
                                                                 <li class="post-author"><a href="#">KOlony Wispe</a></li>
@@ -1543,13 +1543,13 @@ $lang = App::getLocale();
                                 </div>
                             </div>
                         </div><!--/#widget-->
-                        
+
                     </div><!--/#sitebar-->
                 </div>
-            </div>				
+            </div>
         </div><!--/.section-->
     </div><!--/.container-->
-		
+
     <div id="twitter-feed">
         <div class="container text-center">
             <div class="row">
@@ -1575,5 +1575,5 @@ $lang = App::getLocale();
             </div>
         </div>
     </div><!--/#twitter-feed-->
-		
+
 @endsection

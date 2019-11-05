@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateMenusTable extends Migration
+class CreateAlbumsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,17 +13,14 @@ class CreateMenusTable extends Migration
      */
     public function up()
     {
-        Schema::create('menus', function (Blueprint $table) {
+        Schema::create('albums', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('name_uz')->nullable();
             $table->string('name_cyrl')->nullable();
             $table->string('name_ru')->nullable();
             $table->string('name_en')->nullable();
-            $table->string('status')->nullable()->default('unpublished');
-            $table->string('url')->nullable();
-            $table->boolean('target')->nullable()->default(false);
-            $table->integer('orderBy')->nullable();
-            $table->integer('parent')->nullable()->default(0);
+            $table->string('filename')->nullable();
+            $table->string('status')->nullable()->default('unpublished'); //published, unpublished, footer_published
             $table->timestamps();
         });
     }
@@ -35,6 +32,6 @@ class CreateMenusTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('menus');
+        Schema::dropIfExists('albums');
     }
 }

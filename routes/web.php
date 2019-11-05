@@ -1,5 +1,5 @@
 <?php
-
+use App\Menu;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -24,6 +24,15 @@
 //     $locale = config('app.locale');
 //     return redirect($locale);
 // });
+
+
+View::composer('layouts.app', function($views){
+    $menus = Menu::where('parent', 0)->where('status', 'published')->get();
+    $views->with([
+        'menus' => $menus,
+    ]);
+});
+
 
 
 Route::group(

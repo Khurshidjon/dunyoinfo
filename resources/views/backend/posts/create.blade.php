@@ -128,6 +128,7 @@
                                         <select name="status" id="status" class="form-control">
                                             <option value="" disabled>-- select status --</option>
                                             <option value="published">Published</option>
+                                            <option value="pending">Pending</option>
                                             <option value="unpublished" selected>Unpublished</option>
                                         </select>
                                     </div>

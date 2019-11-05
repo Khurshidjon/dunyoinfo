@@ -47,9 +47,9 @@
                                     <div class="modal-header no-bd">
                                         <h5 class="modal-title">
                                             <span class="fw-mediumbold">
-                                            New</span> 
+                                            Delete </span> 
                                             <span class="fw-light">
-                                                Row
+                                                Post
                                             </span>
                                         </h5>
                                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -113,8 +113,8 @@
                                             <td>
                                                 <a href="#">{{ $post->{'title_'.$lang} }}</a>
                                             </td>
-                                            <td><img src="{{ asset('storage/images/thumbnailSmall') .'/'. $post->image }}" style="width:100px" alt="" srcset=""></td>
-                                            <td>Edinburgh</td>
+                                            <td><img src="{{ asset('storage/images/95x95') .'/'. $post->image }}" style="width:70px" alt="" srcset=""></td>
+                                            <td><span class="badge {{ $post->status=='published'?'badge-success':($post->status=='pending'?'badge-warning':'badge-danger') }}"><b>{{ $post->status }}</b></span></td>
                                             <td>
                                                 <div class="form-button-action">
                                                     <button type="button" data-toggle="tooltip" title="" class="btn btn-link btn-primary btn-lg" data-original-title="Edit Task">
@@ -138,6 +138,7 @@
         </div>
     </div>
 </div>
+@if (\Session::has('success'))
 @push('demo-script')
     <script>
         $.notify({
@@ -154,4 +155,5 @@
         });
     </script>
 @endpush
+@endif
 @endsection
