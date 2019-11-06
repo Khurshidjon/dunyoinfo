@@ -25,11 +25,13 @@
 	    <script src="{{ asset('frontend/js/html5shiv.js') }}"></script>
 	    <script src="{{ asset('frontend/js/respond.min.js') }}"></script>
 	<![endif]-->
+
     <link rel="shortcut icon" href="{{ asset('frontend/images/ico/favicon.ico') }}">
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{ asset('frontend/images/ico/apple-touch-icon-144-precomposed.png') }}">
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="{{ asset('frontend/images/ico/apple-touch-icon-114-precomposed.png') }}">
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="{{ asset('frontend/images/ico/apple-touch-icon-72-precomposed.png') }}">
     <link rel="apple-touch-icon-precomposed" href="{{ asset('frontend/images/ico/apple-touch-icon-57-precomposed.png') }}">
+    <link href="{{ asset('frontend/css/resp.css') }}" rel="stylesheet">
     <style>
         @media (max-width: 767px){
             .homepage-five #weather, .homepage-two #weather {
@@ -78,6 +80,55 @@
 				<div id="topbar-right">
 					<div id="weather">
 						<ul class="list-inline">
+                            <li class="list-inline-item">
+                                <button class="btn" id="getText"><i class="fa fa-volume-up"></i></button>
+                            </li>
+                            <li class="list-inline-item">
+                                <div class="dropdown">
+                                    <div class="icon_accessibility dataTooltip" data-toggle="dropdown" data-placement="bottom" title="" data-original-title="Mahsus imkoniyatlar" aria-expanded="true">
+                                        <a href="#" style="font-size: 15px">
+                                            <i class="fa fa-eye"></i>
+                                        </a>
+                                    </div>
+                                    <div class="dropdown-menu dropdown-menu-right specialViewArea no-propagation">
+                                        <div class="triangle"></div>
+                                        <div class="appearance">
+                                            <p class="specialTitle">Кўриниш</p>
+                                            <div class="squareAppearances">
+                                                <div class="squareBox spcNormal" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Oddiy ko`rinish">A</div>
+                                            </div>
+                                            <div class="squareAppearances">
+                                                <div class="squareBox spcWhiteAndBlack" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Oq-qora ko`rinish">A</div>
+                                            </div>
+                                            <div class="squareAppearances">
+                                                <div class="squareBox spcDark" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Qorong`ilashgan ko`rinish">A</div>
+                                            </div>
+                                            <div class="squareAppearances">
+                                                <div class="squareBox spcNoImage" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Расмли"></div>
+                                            </div>
+                                        </div>
+                                        <div class="appearance">
+                                            <p class="specialTitle">Шрифт ўлчами</p>
+                                            <div class="block">
+                                                <div class="sliderText"><span class="range">0</span>% га катталаштириш</div>
+                                                <div id="fontSizer" class="defaultSlider ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all">
+                                                    <div class="ui-slider-range ui-widget-header ui-corner-all ui-slider-range-min" style="width: 0%;"></div><span class="ui-slider-handle ui-state-default ui-corner-all" tabindex="0" style="left: 0%;"></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="more_margin"></div>
+                                        <div class="appearance">
+                                            <div class="pull-right">
+
+                                            </div>
+                                        </div>
+                                        <div class="more_margin"></div>
+                                        <div class="appearance">
+                                            <div class="specialViewCopyrightText"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
 							@foreach(LaravelLocalization::getSupportedLocales() as $localeCode => $properties)
 								<li class="list-inline-item">
 									<a rel="alternate" hreflang="{{ $localeCode }}" class="text-uppercase {{ $lang==$localeCode?'text-info':'' }}" href="{{ LaravelLocalization::getLocalizedURL($localeCode, null, [], true) }}">
@@ -720,7 +771,7 @@
                 var now_weather = data.main.temp - 273.15;
                 var day_weather = data.main.temp_max - 273.15;
                 var afternoon_weather = data.main.temp_min - 273.15;
-                console.log(data);
+                // console.log(data);
                 $('#now_weather').html(now_weather + '<sup>°C</sup>');
 
                 $('#city').text(data.name);
@@ -730,7 +781,14 @@
                 console.log(JSON.stringify(response));
             }
         });
-
+        $(function () {
+            $('#getText').on('click', function () {
+                responsiveVoice.speak(window.getSelection().toString(), 'Russian Male');
+            });
+        })
     </script>
+    <script src="{{ asset('frontend/js/responsivevoice.js') }}"></script>
+    <script src="{{ asset('frontend/js/jquery.coockie.js') }}"></script>
+    <script src="{{ asset('frontend/js/sw.js') }}"></script>
 </body>
 </html>
