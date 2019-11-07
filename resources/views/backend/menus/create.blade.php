@@ -80,7 +80,13 @@
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="col-md-6">
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <label for="url">URL</label>
+                                        <input id="url" type="text" name="url" class="form-control" placeholder="https://dunyo.info/..." value="{{ old('url') }}">
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
                                     <div class="form-group">
                                         <label for="status">Status</label>
                                         <select name="status" id="status" class="form-control">
@@ -90,7 +96,7 @@
                                         </select>
                                     </div>
                                 </div>
-                                <div class="col-md-6">
+                                <div class="col-md-3">
                                     <div class="form-group">
                                         <label for="status">Parent</label>
                                         <select name="status" id="status" class="form-control">
@@ -99,6 +105,12 @@
                                                 <option value="{{ $menu->id }}">{{ $menu->name_cyrl }}</option>
                                             @endforeach
                                         </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <label for="target">TARGET</label>
+                                        <input id="target" type="checkbox" name="target" class="form-control" value="{{ old('target') }}">
                                     </div>
                                 </div>
                             </div>
