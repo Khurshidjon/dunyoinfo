@@ -80,26 +80,26 @@
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="col-md-3">
+                                <div class="col-md-4">
                                     <div class="form-group">
                                         <label for="url">URL</label>
                                         <input id="url" type="text" name="url" class="form-control" placeholder="https://dunyo.info/..." value="{{ old('url') }}">
                                     </div>
                                 </div>
-                                <div class="col-md-3">
+                                <div class="col-md-4">
                                     <div class="form-group">
                                         <label for="status">Status</label>
                                         <select name="status" id="status" class="form-control">
-                                            <option value="" disabled>-- select status --</option>
-                                            <option value="published">Published</option>
-                                            <option value="unpublished" selected>Unpublished</option>
+                                            <option disabled>-- select status --</option>
+                                            <option value="published" selected>Published</option>
+                                            <option value="unpublished">Unpublished</option>
                                         </select>
                                     </div>
                                 </div>
-                                <div class="col-md-3">
+                                <div class="col-md-4">
                                     <div class="form-group">
-                                        <label for="status">Parent</label>
-                                        <select name="status" id="status" class="form-control">
+                                        <label for="parent">Parent</label>
+                                        <select name="parent" id="parent" class="form-control">
                                             <option value="0">-- select parent --</option>
                                             @foreach($menus as $menu)
                                                 <option value="{{ $menu->id }}">{{ $menu->name_cyrl }}</option>
@@ -107,10 +107,16 @@
                                         </select>
                                     </div>
                                 </div>
-                                <div class="col-md-3">
+                                <div class="col-md-4">
                                     <div class="form-group">
                                         <label for="target">TARGET</label>
                                         <input id="target" type="checkbox" name="target" class="form-control" value="{{ old('target') }}">
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label for="order_by">SORT</label>
+                                        <input id="order_by" type="number" name="orderBy" class="form-control" value="{{ old('orderBy', $menus!=null?$menus->last():'') }}">
                                     </div>
                                 </div>
                             </div>
