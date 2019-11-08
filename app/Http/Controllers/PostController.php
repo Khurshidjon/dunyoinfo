@@ -99,7 +99,7 @@ class PostController extends Controller
             $thumbnail600x600 = $filename.time().'.'.$extension;
 
             //Upload File
-            
+
             $request->file('image')->storeAs('public/images', $filenametostore);
 
             $request->file('image')->storeAs('public/images/450x258', $thumbnail450x258);
@@ -167,7 +167,11 @@ class PostController extends Controller
      */
     public function edit(Post $post)
     {
-        //
+        $categories = Category::where('status', 'published')->get();
+        return view('backend.posts.edit', [
+            'categories' => $categories,
+            'post' => $post
+        ]);
     }
 
     /**

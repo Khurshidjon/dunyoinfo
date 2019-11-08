@@ -31,7 +31,7 @@ $lang = App::getLocale();
                                 <div class="post feature-post">
                                     <div class="entry-header">
                                         <div class="entry-thumbnail">
-                                            <img class="img-responsive" src="{{ asset('frontend/images/post/slider/1.jpg') }}" alt="" />
+                                            <img class="img-responsive" src="{{ asset('frontend/images/images/banner_two.jpg') }}" alt="" />
                                         </div>
                                         <div class="catagory world"><a href="#">World</a></div>
                                     </div>
@@ -45,14 +45,14 @@ $lang = App::getLocale();
                                             </ul>
                                         </div>
                                         <h2 class="entry-title">
-                                            <a href="news-details.html">We Are Seeing The Effects Of The Minimum Wage Rise In San Francisco</a>
+                                            <a href="#">We Are Seeing The Effects Of The Minimum Wage Rise In San Francisco</a>
                                         </h2>
                                     </div>
                                 </div><!--/post-->
                                 <div class="post feature-post">
                                     <div class="entry-header">
                                         <div class="entry-thumbnail">
-                                            <img class="img-responsive" src="{{ asset('frontend/images/post/slider/7.jpg') }}" alt="" />
+                                            <img class="img-responsive" src="{{ asset('frontend/images/images/banner_three.jpg') }}" alt="" />
                                         </div>
                                         <div class="catagory sports"><a href="#">Sports</a></div>
                                     </div>
@@ -73,7 +73,7 @@ $lang = App::getLocale();
                                 <div class="post feature-post">
                                     <div class="entry-header">
                                         <div class="entry-thumbnail">
-                                            <img class="img-responsive" src="{{ asset('frontend/images/post/slider/13.jpg') }}" alt="" />
+                                            <img class="img-responsive" src="{{ asset('frontend/images/images/banner_four.jpg') }}" alt="" />
                                         </div>
                                         <div class="catagory entertainment"><a href="#">Entertainment</a></div>
                                     </div>
@@ -91,7 +91,7 @@ $lang = App::getLocale();
                                         </h2>
                                     </div>
                                 </div><!--/post-->
-                                <div class="post feature-post">
+                            {{--    <div class="post feature-post">
                                     <div class="entry-header">
                                         <div class="entry-thumbnail">
                                             <img class="img-responsive" src="{{ asset('frontend/images/post/slider/12.jpg') }}" alt="" />
@@ -136,7 +136,7 @@ $lang = App::getLocale();
                                 <div class="post feature-post">
                                     <div class="entry-header">
                                         <div class="entry-thumbnail">
-                                            <img class="img-responsive" src="{{ asset('frontend/images/post/slider/10.jpg') }}" alt="" />
+                                            <img class="img-responsive" src="{{ asset('frontend/images/images/banner_one.jpg') }}" alt="" />
                                         </div>
                                         <div class="catagory entertainment"><a href="#">Entertainment</a></div>
                                     </div>
@@ -150,7 +150,7 @@ $lang = App::getLocale();
                                             </ul>
                                         </div>
                                         <h2 class="entry-title">
-                                            <a href="news-details.html">Watch directors Quentin Tarantino and Paul Thomas Anderson geek out over 70mm film</a>
+                                            <a href="#">Watch directors Quentin Tarantino and Paul Thomas Anderson geek out over 70mm film</a>
                                         </h2>
                                     </div>
                                 </div><!--/post-->
@@ -174,11 +174,11 @@ $lang = App::getLocale();
                                             <a href="news-details.html">'Affluenza' teen arrested in Mexican resort after weeks on the run</a>
                                         </h2>
                                     </div>
-                                </div><!--/post-->
+                                </div><!--/post-->--}}
                                 <div class="post feature-post">
                                     <div class="entry-header">
                                         <div class="entry-thumbnail">
-                                            <img class="img-responsive" src="{{ asset('frontend/images/post/slider/8.jpg') }}" alt="" />
+                                            <img class="img-responsive" src="{{ asset('frontend/images/images/banner_five.jpg') }}" alt="" />
                                         </div>
                                         <div class="catagory sports"><a href="#">Sports</a></div>
                                     </div>
@@ -199,7 +199,7 @@ $lang = App::getLocale();
                                 <div class="post feature-post">
                                     <div class="entry-header">
                                         <div class="entry-thumbnail">
-                                            <img class="img-responsive" src="{{ asset('frontend/images/post/slider/9.jpg') }}" alt="" />
+                                            <img class="img-responsive" src="{{ asset('frontend/images/images/banner_six.jpg') }}" alt="" />
                                         </div>
                                         <div class="catagory entertainment"><a href="#">Entertainment</a></div>
                                     </div>
@@ -213,7 +213,7 @@ $lang = App::getLocale();
                                             </ul>
                                         </div>
                                         <h2 class="entry-title">
-                                            <a href="news-details.html">44 books on 44 presidents: Welcome, folks, to the Adams administration</a>
+                                            <a href="#">Watch directors Quentin Tarantino and Paul Thomas Anderson geek out over 70mm film</a>
                                         </h2>
                                     </div>
                                 </div><!--/post-->

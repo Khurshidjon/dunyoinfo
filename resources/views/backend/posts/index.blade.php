@@ -47,7 +47,7 @@
                                     <div class="modal-header no-bd">
                                         <h5 class="modal-title">
                                             <span class="fw-mediumbold">
-                                            Delete </span> 
+                                            Delete </span>
                                             <span class="fw-light">
                                                 Post
                                             </span>
@@ -118,7 +118,7 @@
                                             <td>
                                                 <div class="form-button-action">
                                                     <button type="button" data-toggle="tooltip" title="" class="btn btn-link btn-primary btn-lg" data-original-title="Edit Task">
-                                                        <i class="fa fa-edit"></i>
+                                                        <a href="{{ route('posts.edit', $post) }}"><i class="fa fa-edit"></i></a>
                                                     </button>
                                                     <button type="button"  data-toggle="modal" data-target="#addRowModal" title="" class="btn btn-link btn-danger">
                                                         <i class="fa fa-times" data-toggle="tooltip" data-original-title="Remove"></i>
@@ -127,7 +127,7 @@
                                             </td>
                                         </tr>
                                     @empty
-                                        
+
                                     @endforelse
                                 </tbody>
                             </table>
