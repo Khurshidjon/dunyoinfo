@@ -44,32 +44,47 @@
             .navbar-right {
                 margin-bottom: 10px;
             }
+            .valyuta-container-items{
+                margin-top: 4em;
+            }
         }
         @media (min-width: 768px){
             .navbar-right {
                 margin-right: unset;
-                /*float: unset !important;*/
-            }
-            .valyuta-container .list-inline{
-                margin-top: 15px;
-                /*margin-right: 12pc;*/
             }
         }
         .valyuta-container{
             text-align: center;
+            font-size: 14px;
         }
-        .valyuta-container #euro_diff_up, #usd_diff_up, #ruble_diff_up{
+        .valyuta-container span {
+            vertical-align: middle !important;
+        }
+        .valyuta-container span b{
+            font-size: 13.9px;
+        }
+        #euro_diff_up, #usd_diff_up, #ruble_diff_up{
             color: green;
-            font-weight: bold;
         }
-        .valyuta-container #euro_diff_down, #usd_diff_down, #ruble_diff_down{
+        #euro_diff_down, #usd_diff_down, #ruble_diff_down{
             color: red;
-            font-weight: bold;
+        }
+        .top-add{
+            margin: 9px 0;
+            overflow: unset;
+        }
+        #city:hover{
+            border-bottom: 1px dashed grey;
+        }
+        @media (min-width: 1000px){
+            #navigation .dropdown-menu {
+                padding: 15px 15px;
+            }
         }
     </style>
     @php
-	$lang = App::getLocale();
-@endphp
+        $lang = App::getLocale();
+    @endphp
 </head>
 <!--/head-->
 <body class="box-width">
@@ -180,47 +195,54 @@
 			<div class="navbar" role="banner">
 				<div class="container">
 					<div class="top-add">
-						<div class="navbar-header">
-							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+						<div class="">
+							<button style="z-index:99999" type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
 								<span class="sr-only"> Toggle navigation</span>
 								<span class="icon-bar"></span>
 								<span class="icon-bar"></span>
 								<span class="icon-bar"></span>
 							</button>
-
-                            <a style="margin-left: -32px" class="navbar-brand" href="{{ route('frontend.index') }}">
-                                <img class="main-logo img-responsive" style="width: 12.4em; margin-top: -10px" src="{{ asset('frontend/images/presets/preset1/logo_'. $lang .'.png') }}" alt="logo">
-                            </a>
-						</div>
-						<div class="navbar-right">
-                            <div class="text-center">
-                                <div class="valyuta-container">
-                                    <ul class="list-inline">
-                                        <li class="list-inline-item">
-                                            <span><b id="usd_code"></b></span>
-                                            <span id="usd_price"></span>
-                                            <span id="usd_diff"></span>
-                                        </li>
-                                        <li class="list-inline-item">
-                                            <span><b id="ruble_code"></b></span>
-                                            <span id="ruble_price"></span>
-                                            <span id="ruble_diff"></span>
-                                        </li>
-                                        <li class="list-inline-item">
-                                            <span><b id="euro_code"></b></span>
-                                            <span id="euro_price"></span>
-                                            <span id="euro_diff"></span>
-                                        </li>
-                                        <li class="list-inline-item" style="margin-left: 150px; font-size: 27px">
-                                            <span id="city"></span>
-                                            <span id="icon"></span>
-                                            <span id="now_weather"></span>
-                                        </li>
-                                    </ul>
+                            <div class="container-fluid">
+                                <div class="row valyuta-container">
+                                    <div class="col-md-4">
+                                        <a style="margin-left: -32px" class="navbar-brand" href="{{ route('frontend.index') }}">
+                                            <img class="main-logo img-responsive" style="width: 12.4em; margin-top: -7px" src="{{ asset('frontend/images/presets/preset1/logo_'. $lang .'.png') }}" alt="logo">
+                                        </a>
+                                    </div>
+                                    <div class="col-md-6" style="padding-top: 1.5em">
+                                        <div class="row valyuta-container-items">
+                                            <div class="col-md-3 col-3">
+                                                <span><b id="usd_code"></b></span>
+                                                <span id="usd_price"></span>
+                                                <span id="usd_diff"></span>
+                                            </div>
+                                            <div class="col-md-3 col-3">
+                                                <span><b id="ruble_code"></b></span>
+                                                <span id="ruble_price"></span>
+                                                <span id="ruble_diff"></span>
+                                            </div>
+                                            <div class="col-md-3 col-3">
+                                                <span><b id="euro_code"></b></span>
+                                                <span id="euro_price"></span>
+                                                <span id="euro_diff"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2">
+                                        <span id="icon"></span>
+                                        <span id="now_weather" style="font-size: 25px"></span>
+                                        <div class="dropdown">
+                                            <a class="dropdown-toggle" data-toggle="dropdown">
+                                                <span id="city"></span> <i class="fa fa-sort-down"></i>
+                                            </a>
+                                            <div class="dropdown-menu">
+                                                <div class="container-fluid">
+                                                    <div class="row cities-container"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
-
-                            <div id="app">
                             </div>
                         </div>
 					</div>
@@ -465,44 +487,88 @@
                 var ruble_diff = data[2].Diff;
 
                 if(usd_diff >= 0){
-                    document.getElementById('usd_diff').innerHTML = '<sup id="usd_diff_up">' + usd_diff + ' <i class="fa fa-long-arrow-up"></i> </sup>';
+                    document.getElementById('usd_diff').innerHTML = '<span id="usd_diff_up"><i class="fa fa-long-arrow-up"></i> </span>';
+                    // document.getElementById('usd_diff').innerHTML = '<sup id="usd_diff_up">' + usd_diff + ' <i class="fa fa-long-arrow-up"></i> </sup>';
                 }else if(usd_diff < 0){
-                    document.getElementById('usd_diff').innerHTML = '<sup id="usd_diff_down">' + usd_diff + ' <i class="fa fa-long-arrow-down"></i> </sup>';
+                    document.getElementById('usd_diff').innerHTML = '<span id="usd_diff_down"><i class="fa fa-long-arrow-down"></i> </span>';
+                    // document.getElementById('usd_diff').innerHTML = '<sup id="usd_diff_down">' + usd_diff + ' <i class="fa fa-long-arrow-down"></i> </sup>';
                 }
 
                 if(euro_diff >= 0){
-                    document.getElementById('euro_diff').innerHTML = '<sup id="euro_diff_up">' + euro_diff + ' <i class="fa fa-long-arrow-up"></i> </sup>';
+                    document.getElementById('euro_diff').innerHTML = '<span id="euro_diff_up"><i class="fa fa-long-arrow-up"></i> </span>';
+                    // document.getElementById('euro_diff').innerHTML = '<sup id="euro_diff_up">' + euro_diff + ' <i class="fa fa-long-arrow-up"></i> </sup>';
                 }else if(euro_diff < 0){
-                    document.getElementById('euro_diff').innerHTML = '<sup id="euro_diff_down">' + euro_diff + ' <i class="fa fa-long-arrow-down"></i> </sup>';
+                    document.getElementById('euro_diff').innerHTML = '<span id="euro_diff_down"><i class="fa fa-long-arrow-down"></i></span>';
+                    // document.getElementById('euro_diff').innerHTML = '<sup id="euro_diff_down">' + euro_diff + ' <i class="fa fa-long-arrow-down"></i> </sup>';
                 }
 
 
                 if(ruble_diff >= 0){
-                    document.getElementById('ruble_diff').innerHTML = '<sup id="ruble_diff_up">' + ruble_diff + ' <i class="fa fa-long-arrow-up"></i> </sup>';
+                    document.getElementById('ruble_diff').innerHTML = '<span id="ruble_diff_up"><i class="fa fa-long-arrow-up"></i></span>';
                 }else if(ruble_diff < 0){
-                    document.getElementById('ruble_diff').innerHTML = '<sup id="ruble_diff_down">' + ruble_diff + ' <i class="fa fa-long-arrow-down"></i> </sup>';
+                    document.getElementById('ruble_diff').innerHTML = '<span id="ruble_diff_down"><i class="fa fa-long-arrow-down"></i></span>';
+                    // document.getElementById('ruble_diff').innerHTML = '<sup id="ruble_diff_down">' + ruble_diff + ' <i class="fa fa-long-arrow-down"></i> </sup>';
                 }
                 // console.log(data);
             })
-            .catch(() => console.log("Can’t access " + url + " response. Blocked by browser?"))
+            .catch(() => console.log("Can’t access " + url + " response. Blocked by browser?"));
 
         $.ajax({
             url: 'https://api.openweathermap.org/data/2.5/weather?id=1512569&appid=c354362d45fd0ee15f9c2ee19b24d6ae',
             type: 'GET',
             success: function (data) {
                 var now_weather = data.main.temp - 273.15;
-                var day_weather = data.main.temp_max - 273.15;
-                var afternoon_weather = data.main.temp_min - 273.15;
-                // console.log(data);
+                if(now_weather > 0){
+                    now_weather = '+' + now_weather;
+                }else if(now_weather < 0){
+                    now_weather = '-' + now_weather;
+                }else if(now_weather == 0){
+                    now_weather = '' + now_weather;
+                }
                 $('#now_weather').html(now_weather + '<sup>°C</sup>');
-
                 $('#city').text(data.name);
-                $('#icon').html("<img src='https://openweathermap.org/img/w/" + data.weather[0].icon + ".png' id='pogoda' style='width:55px; height: 55px;'>");
+                $('#icon').html("<img src='https://openweathermap.org/img/w/" + data.weather[0].icon + ".png' id='pogoda' style='width:35px; height: 35px;'>");
             },
             error: function(response) {
                 console.log(JSON.stringify(response));
             }
         });
+        $.ajax({
+            url: '{{ asset('frontend/json/city-list.json') }}',
+            type: 'GET',
+            success: function (cities) {
+                var regions = '';
+                $(cities).each(function (e, index) {
+                    regions = regions + "<div class='col-md-12'> <a href='' class='dropdown-menu-items' data-id='" + index.id + "'>" + index.name +"</a></div>";
+                });
+                $('.cities-container').html(regions);
+            }
+        });
+
+        $('.cities-container').on('click', '.dropdown-menu-items', function (e) {
+            e.preventDefault();
+            var id = $(this).attr("data-id");
+            $.ajax({
+                url: 'https://api.openweathermap.org/data/2.5/weather?id='+id+'&appid=c354362d45fd0ee15f9c2ee19b24d6ae',
+                type: 'GET',
+                success: function (data) {
+                    var now_weather = data.main.temp - 273.15;
+                    now_weather = Math.floor(now_weather);
+                    if(now_weather > 0){
+                        now_weather = '+' + now_weather;
+                    }else if(now_weather < 0){
+                        now_weather = '-' + now_weather;
+                    }else if(now_weather == 0){
+                        now_weather = '' + now_weather;
+                    }
+                    $('#now_weather').html(now_weather + '<sup>°C</sup>');
+
+                    $('#city').text(data.name);
+                    $('#icon').html("<img src='https://openweathermap.org/img/w/" + data.weather[0].icon + ".png' id='pogoda' style='width:35px; height: 35px;'>");
+                }
+            });
+        });
+
         $(function () {
             $('#getText').on('click', function () {
                 responsiveVoice.speak(window.getSelection().toString(), 'Russian Male');

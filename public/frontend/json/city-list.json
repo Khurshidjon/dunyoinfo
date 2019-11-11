@@ -1,0 +1,110 @@
+[
+    {
+        "id": 1484839,
+        "name": "Toshkent",
+        "country": "UZ",
+        "coord": {
+          "lon": 69.25,
+          "lat": 41.333328
+        }
+      },
+      {
+        "id": 1484840,
+        "name": "Sirdaryo",
+        "country": "UZ",
+        "coord": {
+          "lon": 68.75,
+          "lat": 40.5
+        }
+      },
+      {
+        "id": 1513886,
+        "name": "Jizzax",
+        "country": "UZ",
+        "coord": {
+          "lon": 67.842216,
+          "lat": 40.115829
+        }
+      },
+      {
+        "id": 1513157,
+        "name": "Namangan",
+        "country": "UZ",
+        "coord": {
+          "lon": 71.672569,
+          "lat": 40.998299
+        }
+      },
+      {
+        "id": 1514589,
+        "name": "Andijon",
+        "country": "UZ",
+        "coord": {
+          "lon": 72.361931,
+          "lat": 40.653069
+        }
+      },
+      {
+        "id": 1514019,
+        "name": "Farg'ona",
+        "country": "UZ",
+        "coord": {
+          "lon": 71.784317,
+          "lat": 40.384209
+        }
+      },
+      {
+        "id": 1114927,
+        "name": "Samarqand",
+        "country": "UZ",
+        "coord": {
+          "lon": 66.583328,
+          "lat": 39.583328
+        }
+      },
+      {
+        "id": 1114928,
+        "name": "Qashqadaryo",
+        "country": "UZ",
+        "coord": {
+          "lon": 66,
+          "lat": 38.583328
+        }
+      },
+      {
+        "id": 1114926,
+        "name": "Surxondaryo",
+        "country": "UZ",
+        "coord": {
+          "lon": 67.5,
+          "lat": 38
+        }
+      },
+      {
+        "id": 1217662,
+        "name": "Buxoro",
+        "country": "UZ",
+        "coord": {
+          "lon": 64.428612,
+          "lat": 39.774719
+        }
+      },
+      {
+        "id": 1484843,
+        "name": "Xorazm",
+        "country": "UZ",
+        "coord": {
+          "lon": 60.5,
+          "lat": 41.5
+        }
+      },
+      {
+        "id": 453752,
+        "name": "Qoraqalpog'iston",
+        "country": "UZ",
+        "coord": {
+          "lon": 58.829861,
+          "lat": 44.216358
+        }
+      }
+]
